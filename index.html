@@ -1,0 +1,1222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sreenu - Personal Portfolio</title>
+
+    <!--
+    - favicon
+  -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/professional_pic.png"
+      type="image/x-icon"
+    />
+
+    <!--
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!--
+    - #MAIN
+  -->
+
+    <main>
+      <!--
+      - #SIDEBAR
+    -->
+
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <a
+            href="https://iili.io/2LR2gCG.png"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Click me!"
+          >
+            <figure class="avatar-box">
+              <img
+                src="./assets/images/professional_pic.png"
+                alt="Sreenu Chandaka"
+                width="80"
+              />
+              <span class="active-status" title="Available for work!"></span>
+            </figure>
+          </a>
+          <div class="info-content">
+            <h1 class="name" title="Sreenu Chandaka">Sreenu Chandaka</h1>
+            <p class="title">Software Engineer</p>
+          </div>
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <!-- <div class="contact-info">
+                <p class="contact-title">Email</p>
+
+                <a
+                  href="/cdn-cgi/l/email-protection#5534343e34263d27343f37343b263d3c606d153238343c397b363a38"
+                  class="contact-link"
+                  ><span
+                    class="__cf_email__"
+                    data-cfemail="b3d2d2d8d2c0dbc1d2d9d1d2ddc0dbda868bf3d4ded2dadf9dd0dcde"
+                    >[email&#160;protected]</span
+                  ></a
+                >
+              </div> -->
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+                <a href="mailto:chandakasreenu0@gmail.com" class="contact-link">chandakasreenu0@gmail.com</a>
+            </div>
+            
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
+
+                <a href="tel:+91 6301485598" class="contact-link"
+                  >+91 6301485598</a
+                >
+              </div>
+            </li>
+
+            <!-- birthday -->
+
+            <!-- <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1999-09-26">Sep 26, 1999</time>
+            </div>
+
+          </li> -->
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+
+                <address>Chennai, India</address>
+              </div>
+            </li>
+          </ul>
+
+          <div class="separator"></div>
+
+          <ul class="social-list">
+            <li class="social-item">
+              <a
+                href="https://www.linkedin.com/in/sreenuchandaka/"
+                class="social-link"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a href="https://github.com/Sreenu-Chandaka" class="social-link">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+
+            <!-- <li class="social-item">
+              <a href="https://g.dev/aakash569" class="social-link">
+                <ion-icon name="logo-google"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a href="https://x.com/itzakax" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li> -->
+          </ul>
+        </div>
+      </aside>
+
+      <!--
+      - #main-content
+    -->
+
+      <div class="main-content">
+        <!--
+        - #NAVBAR
+      -->
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portfolio</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Blog</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>
+            </li>
+          </ul>
+        </nav>
+
+        <!--
+        - #ABOUT
+      -->
+
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
+
+          <section class="about-text">
+            <p>
+              Innovative Software Engineer specializing in comprehensive
+              full-stack solutions, proficiently leveraging Spring Boot and
+              React.js to deliver dynamic web and mobile applications. With a
+              proven track record, I focus on enhancing user engagement and
+              streamlining operations through innovative technological
+              implementations. At the core of my expertise is a strong
+              commitment to leveraging cloud computing, artificial intelligence,
+              and cross-platform development to drive significant business
+              improvements. My approach centers on crafting scalable solutions
+              that adapt to modern business needs while maintaining exceptional
+              user experiences. 
+              <ul>
+                <li>Mobile: Cross-platform development ensuring optimal performance across devices</li>
+                <li>Backend: Crafting efficient, scalable microservices using Spring Boot</li>
+                <li>Frontend: Building user-centric interfaces with React.js and Flutter</li>
+                <li>Cloud Computing: Expert in managing and deploying cloud-native applications</li>
+                <li>AI/Machine Learning: Integrating Generative AI to create smarter, more responsive applications</li>
+               
+              </ul>
+            </p>
+
+            <p>
+              For those seeking a collaborative, innovative partner in software
+              development, I invite you to connect or review my portfolio. Let's
+              discuss how we can implement effective solutions together!
+            </p>
+          </section>
+
+          <!--
+          - service
+        -->
+
+          <section class="service">
+            <h3 class="h3 service-title">What i'm doing</h3>
+
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-app.svg"
+                    alt="mobile app icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Mobile Apps</h4>
+
+                  <p class="service-item-text">
+                    Professional development of applications for Android and
+                    ios.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-dev.svg"
+                    alt="Fullstack development icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Fullstack Development</h4>
+
+                  <p class="service-item-text">
+                    Building seamless and scalable applications end-to-end.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-design.svg
+                "
+                    alt="design icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">UI/UX Design</h4>
+
+                  <p class="service-item-text">
+                    The most modern and high-quality design made at a
+                    professional level.
+                  </p>
+                </div>
+              </li>
+
+              <!-- <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Photography</h4>
+
+                <p class="service-item-text">
+                  I make high-quality photos of any category at a professional level.
+                </p>
+              </div>
+
+            </li> -->
+            </ul>
+          </section>
+
+          <!--
+          - testimonials
+        -->
+
+          <!-- <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section> -->
+
+          <!--
+          - testimonials modal
+        -->
+
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
+
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img
+                    src="./assets/images/avatar-1.png"
+                    alt="Daniel lewis"
+                    width="80"
+                    data-modal-img
+                  />
+                </figure>
+
+                <img src="./assets/images/icon-quote.svg" alt="quote icon" />
+              </div>
+
+              <div class="modal-content">
+                <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+                <time datetime="2021-06-14">14 June, 2021</time>
+
+                <div data-modal-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were
+                    very pleased with the work done. She has a lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum
+                    dolor sit amet, ullamcous cididt consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels
+                    dolore magnarels alia.
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <!--
+          - clients
+        -->
+
+          <section class="clients">
+            <h3 class="h3 clients-title">Skills</h3>
+
+            <ul class="clients-list has-scrollbar">
+              <li class="clients-item">
+                <a href="https://dart.dev/" target="_blank">
+                  <img src="./assets/skills/Dart.svg" alt="client logo" />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="https://flutter.dev/" target="_blank">
+                  <img src="./assets\skills\Flutter.svg" alt="client logo" />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="https://firebase.google.com/" target="_blank">
+                  <img src="./assets\skills\Firebase.svg" alt="client logo" />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="https://www.postman.com/" target="_blank">
+                  <img src="./assets/skills/Postman.svg" alt="client logo" />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="https://www.figma.com/" target="_blank">
+                  <img src="./assets/skills/Figma.svg" alt="client logo" />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="https://developer.android.com/studio" target="_blank">
+                  <img
+                    src="./assets/skills/AndroidStudio.svg"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="https://developer.apple.com/xcode/" target="_blank">
+                  <img src="./assets/skills/Xcode.svg" alt="client logo" />
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #RESUME
+      -->
+
+     
+      <!DOCTYPE html>
+      <article class="resume" data-page="resume">
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+      
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Education</h3>
+          </div>
+      
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+                Rajiv Gandhi University of Knowledge Technologies
+              </h4>
+              <p class="timeline-text">
+                Bachelor of Technology in Electronics and Communication Engineering
+              </p>
+              <span>Graduation: August 2023</span>
+              <p class="timeline-text">CGPA: 8.7 / 10</p>
+              <p class="timeline-text">Relevant Coursework: Enterprise Computing, Software Architecture, Database Management Systems</p>
+            </li>
+          </ol>
+        </section>
+      
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Experience</h3>
+          </div>
+      
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Suki Software Solutions</h4>
+              <p class="timeline-text">Software Engineer</p>
+              <span>Aug, 2024 — Present</span>
+              <ul class="timeline-text">
+                <li>&#8226; Spearheaded development of e-commerce and ERP applications using <br> Flutter and Spring Boot</li>
+                <li>&#8226; Drove 30% improvement in user engagement through innovative mobile solutions</li>
+                <li>&#8226; Implemented cross-platform applications enhancing operational efficiency by 25%</li>
+                <li>&#8226; Integrated advanced push notification capabilities, increasing user retention by 18%</li>
+              </ul>
+            </li>
+      
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Noki Technologies Private Limited</h4>
+              <p class="timeline-text">Software Engineer</p>
+              <span>Aug, 2023 — Jul, 2024 &#8226; 1 year</span>
+              <ul class="timeline-text">
+                <li>&#8226; Developed real-time live tracking and medical IoT mobile applications</li>
+                <li>&#8226; Increased user satisfaction by 35% through advanced feature integration</li>
+                <li>&#8226; Implemented Google Maps SDK, Razorpay, and in-app chat functionalities</li>
+                <li>&#8226; Reduced app crash incidents by 30% through robust development practices</li>
+              </ul>
+            </li>
+      
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Orotron</h4>
+              <p class="timeline-text">Software Developer Intern</p>
+              <span>Feb, 2023 — Jul, 2023 &#8226; 6 months</span>
+              <ul class="timeline-text">
+                <li>&#8226; Developed and implemented a real-time image gallery feature, enabling instant photo uploads and seamless viewing experience for users across multiple devices</li>
+                <li>&#8226; Designed and built an interactive commenting system with threaded replies, supporting real-time updates and notifications to drive user engagement and community interaction</li>
+                <li>&#8226; Engineered an automatic synchronization system that seamlessly integrates users' phone gallery with the application's cloud storage, ensuring continuous backup and cross-device accessibility</li>
+              </ul>
+            </li>
+      
+          
+          </ol>
+        </section>
+      </article>
+
+        <!--
+        - #PORTFOLIO
+      -->
+
+        <article class="portfolio" data-page="portfolio">
+          <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+          </header>
+
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
+              </li>
+
+              <!-- <li class="filter-item">
+              <button data-filter-btn>Web design</button>
+            </li> -->
+
+              <li class="filter-item">
+                <button data-filter-btn>Applications</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Web development</button>
+              </li>
+            </ul>
+
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>
+                  Select category
+                </div>
+
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
+
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
+
+                <!-- <li class="select-item">
+                <button data-select-item>Web design</button>
+              </li> -->
+
+                <li class="select-item">
+                  <button data-select-item>Applications</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Web development</button>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="applications"
+              >
+                <a href="https://apps.apple.com/in/app/anna-kirana/id1661523940" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/projects/anna_kirana.webp"
+                      alt="Anna Kirana"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Anna Kirana</h3>
+                  <p class="project-category">Application</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="applications"
+              >
+                <a href="https://play.google.com/store/apps/details?id=com.suki.erpmobileapp&hl=en_IN" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/projects/suki_erp.webp"
+                      alt="suki erp"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">SUKI ERP</h3>
+                  <p class="project-category">Application</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="applications"
+              >
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.mevorides.ridesuser&hl=en_IN"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/projects/mevo.webp"
+                      alt="Mevo"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Mevo Rides</h3>
+                  <p class="project-category">Application</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="applications"
+              >
+                <a href="https://apps.apple.com/in/app/salestable/id6504559119" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/projects/salestable.webp"
+                      alt="Salestable"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Salestable</h3>
+                  <p class="project-category">Application</p>
+                </a>
+              </li>
+
+              <!-- <li
+                class="project-item active"
+                data-filter-item
+                data-category="applications"
+              >
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.inflancer.saara"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/projects/saara.png"
+                      alt="Saara"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Saara</h3>
+                  <p class="project-category">Application</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="applications"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/projects/ifood.png"
+                      alt="ifood"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">ifood</h3>
+                  <p class="project-category">Application</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="applications"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/projects/merodate.png"
+                      alt="MeroDate"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">MeroDate</h3>
+                  <p class="project-category">Application</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="applications"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/projects/weatherapp.png"
+                      alt="Weather App"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Weather App</h3>
+                  <p class="project-category">Application</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="applications"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/projects/music.png"
+                      alt="Music App"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Music App</h3>
+                  <p class="project-category">Application</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="applications"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/projects/movieapp.png"
+                      alt="Movie App"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Movie App</h3>
+                  <p class="project-category">Application</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a
+                  href="https://github-user-ruby-kappa.vercel.app/"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/projects/github_user.png"
+                      alt="arrival"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">GitHub users search App</h3>
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="https://carzone-seven.vercel.app/" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/projects/carzone.png"
+                      alt="arrival"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Car Zone</h3>
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="https://movfix-bay.vercel.app/" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/projects/movfix.png"
+                      alt="arrival"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Movfix</h3>
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="https://fitness-zone-xi.vercel.app/" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/projects/fitness_zone.png"
+                      alt="arrival"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Fitness Zone</h3>
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a
+                  href="https://aakashx58.github.io/Ecommerce_website/"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/projects/ecommerce.png"
+                      alt="arrival"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">E-Commerce</h3>
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a
+                  href="https://netflix-clone-olive-chi.vercel.app/"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/projects/netflix.png"
+                      alt="metaspark"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Netflix Clone</h3>
+                  <p class="project-category">Web development</p>
+                </a>
+              </li> -->
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #BLOG
+      -->
+
+        <article class="blog" data-page="blog">
+          <header>
+            <h2 class="h2 article-title">Blog</h2>
+          </header>
+
+          <section class="blog-posts">
+            <ul class="blog-posts-list">
+              <li class="blog-post-item">
+                <a
+                  href="https://medium.com/@chandakasreenu0/the-getx-paradox-inside-flutters-most-controversial-state-management-package-5cbd9e6a9b59"
+                  target="_blank"
+                >
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/blogs/getx_flutter.jpg"
+                      alt="The GetX Paradox: Inside Flutter’s Most Controversial State Management Package"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Blog</p>
+                      <span class="dot"></span>
+                      <time datetime="2024-11-28">Nov 28, 2024</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      The GetX Paradox: Inside Flutter’s Most Controversial State Management Package
+                    </h3>
+
+                    <p
+                      class="blog-text"
+                      style="
+                        overflow: hidden;
+                        display: -webkit-box;
+                        -webkit-box-orient: vertical;
+                      "
+                    >
+                    In the ever-evolving world of Flutter development, few packages have sparked as much passionate debate as GetX. Loved by some, criticized by others, GetX represents a fascinating case study in developer tooling that challenges our conventional understanding of what makes a great state management solution.
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="blog-post-item">
+                <a
+                  href="https://medium.com/@chandakasreenu0/choosing-the-right-ai-coding-assistant-codeium-vs-cursor-ai-and-more-b81418e74d1a"
+                  target="_blank"
+                >
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/blogs/codeium.png"
+                      alt="Choosing the Right AI Coding Assistant: Codeium vs. Cursor AI and More"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Blog</p>
+                      <span class="dot"></span>
+                      <time datetime="2024-11-18">Nov 18, 2024</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      Flutter's Impact on Future Cross-Platform Apps
+                    </h3>
+
+                    <p
+                      class="blog-text"
+                      style="
+                        overflow: hidden;
+                        display: -webkit-box;
+                        -webkit-box-orient: vertical;
+                      "
+                    >
+                    In the ever-evolving landscape of software development, AI-powered coding assistants have emerged as invaluable tools for enhancing productivity and streamlining workflows. With numerous options available, developers are often faced with the challenge of selecting the right tool for their needs. In this blog, we will compare five leading AI coding assistants: Codeium, Cursor AI, GitHub Copilot, Tabnine, and Amazon CodeWhisperer. By examining their features, strengths, and use cases, we aim to help you make an informed decision.
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #CONTACT
+      -->
+
+        <article class="contact" data-page="contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
+
+          <section class="mapbox" data-mapbox>
+            <figure>
+              <iframe
+                src="https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Kamarajapuram,+57,+Kamarajapuram+Main+Rd,+Kamarajapuram,+Gowriwakkam,+Sembakkam,+Chennai,+Tamil+Nadu+600073,+India+(My+Business+Name)&t=&z=14&ie=UTF8&iwloc=B&output=embed"
+                width="400"
+                height="300"
+                loading="lazy"
+                style="filter: none;"
+              ></iframe>
+            </figure>
+          </section>
+
+          <section class="contact-form">
+            <h3 class="h3 form-title">Contact Form</h3>
+
+            <form
+              action="https://api.web3forms.com/submit"
+              method="POST"
+              class="form"
+              data-form
+            >
+              <!-- Replace with your Access Key -->
+              <input
+                type="hidden"
+                name="access_key"
+                value="f60d2733-e8fc-432d-87c5-0038b8fc16ad"
+              />
+
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="fullname"
+                  class="form-input"
+                  placeholder="Full name"
+                  name="name"
+                  required
+                  data-form-input
+                />
+
+                <input
+                  type="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Email address"
+                  email="email"
+                  required
+                  data-form-input
+                />
+              </div>
+
+              <textarea
+                name="message"
+                class="form-input"
+                placeholder="Your Message"
+                required
+                data-form-input
+              ></textarea>
+
+              <button class="form-btn" type="submit" disabled data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <!--
+    - custom js link
+  -->
+    <script
+      data-cfasync="false"
+      src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+    ></script>
+    <script src="./assets/js/script.js"></script>
+
+    <!--
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!--
+    - experience calculator
+  -->
+    <script src="./assets/js/experience-calculator.js"></script>
+  </body>
+</html>
