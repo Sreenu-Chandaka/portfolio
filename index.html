@@ -484,210 +484,190 @@
         </section>
       </article>
 
-        <!--
-        - #PORTFOLIO
-      -->
+  <article class="portfolio" data-page="portfolio">
+          <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+          </header>
 
-        <article class="portfolio" data-page="portfolio">
-          <header>
-            <h2 class="h2 article-title">Portfolio</h2>
-          </header>
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
+              </li>
 
-          <section class="projects">
-            <ul class="filter-list">
-              <li class="filter-item">
-                <button class="active" data-filter-btn>All</button>
-              </li>
+                            <li class="filter-item">
+                <button data-filter-btn>Applications</button>
+              </li>
 
-              <!-- <li class="filter-item">
-              <button data-filter-btn>Web design</button>
-            </li> -->
+              <li class="filter-item">
+                <button data-filter-btn>Web development</button>
+              </li>
+            </ul>
 
-              <li class="filter-item">
-                <button data-filter-btn>Applications</button>
-              </li>
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>
+                  Select category
+                </div>
 
-              <li class="filter-item">
-                <button data-filter-btn>Web development</button>
-              </li>
-            </ul>
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
 
-            <div class="filter-select-box">
-              <button class="filter-select" data-select>
-                <div class="select-value" data-selecct-value>
-                  Select category
-                </div>
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
 
-                <div class="select-icon">
-                  <ion-icon name="chevron-down"></ion-icon>
-                </div>
-              </button>
+                                <li class="select-item">
+                  <button data-select-item>Applications</button>
+                </li>
 
-              <ul class="select-list">
-                <li class="select-item">
-                  <button data-select-item>All</button>
-                </li>
+                <li class="select-item">
+                  <button data-select-item>Web development</button>
+                </li>
+              </ul>
+            </div>
 
-                <!-- <li class="select-item">
-                <button data-select-item>Web design</button>
-              </li> -->
+            <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="applications"
+              >
+                <a href="https://apps.apple.com/in/app/anna-kirana/id1661523940" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/projects/anna_kirana.webp"
+                      alt="Anna Kirana"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Anna Kirana</h3>
+                  <p class="project-category">Application</p>
+                </a>
+              </li>
 
-                <li class="select-item">
-                  <button data-select-item>Applications</button>
-                </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="applications"
+              >
+                <a href="https://play.google.com/store/apps/details?id=com.suki.erpmobileapp&hl=en_IN" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/projects/suki_erp.webp"
+                      alt="suki erp"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">SUKI ERP</h3>
+                  <p class="project-category">Application</p>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a
+                  href="https://sreepixelss.web.app/"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/projects/sreepixelss.png"
+                      alt="SreePixels -HD images website"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">SreePixels -HD images website</h3>
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="applications"
+              >
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.civilbook.civilbookprovider"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/projects/civilbookprovider.webp"
+                      alt="CivilBook Provider"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">CivilBook Provider</h3>
+                  <p class="project-category">Application</p>
+                </a>
+              </li>
 
-                <li class="select-item">
-                  <button data-select-item>Web development</button>
-                </li>
-              </ul>
-            </div>
-
-            <ul class="project-list">
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="applications"
-              >
-                <a href="https://apps.apple.com/in/app/anna-kirana/id1661523940" target="_blank">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-                    <img
-                      src="./assets/projects/anna_kirana.webp"
-                      alt="Anna Kirana"
-                      loading="lazy"
-                    />
-                  </figure>
-                  <h3 class="project-title">Anna Kirana</h3>
-                  <p class="project-category">Application</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="applications"
-              >
-                <a href="https://play.google.com/store/apps/details?id=com.suki.erpmobileapp&hl=en_IN" target="_blank">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-                    <img
-                      src="./assets/projects/suki_erp.webp"
-                      alt="suki erp"
-                      loading="lazy"
-                    />
-                  </figure>
-                  <h3 class="project-title">SUKI ERP</h3>
-                  <p class="project-category">Application</p>
-                </a>
-              </li>
-               <li
-                class="project-item active"
-                data-filter-item
-                data-category="web development"
-              >
-                <a
-                  href="https://sreepixelss.web.app/"
-                  target="_blank"
-                >
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-                    <img
-                      src="./assets/projects/sreepixelss.png"
-                      alt="arrival"
-                      loading="lazy"
-                    />
-                  </figure>
-                  <h3 class="project-title">SreePixels -HD images website</h3>
-                  <p class="project-category">Web development</p>
-                </a>
-              </li>
-              <li
-  class="project-item active"
-  data-filter-item
-  data-category="applications"
->
-  <a
-    href="https://play.google.com/store/apps/details?id=com.civilbook.civilbookprovider"
-    target="_blank"
-  >
-    <figure class="project-img">
-      <div class="project-item-icon-box">
-        <ion-icon name="eye-outline"></ion-icon>
-      </div>
-      <img
-        src="./assets/projects/civilbookprovider.webp"
-        alt="CivilBook Provider"
-        loading="lazy"
-      />
-    </figure>
-    <h3 class="project-title">CivilBook Provider</h3>
-    <p class="project-category">Application</p>
-  </a>
-</li>
-
-            
-  class="project-item active"
-  data-filter-item
-  data-category="applications"
->
-  <a
-    href="https://play.google.com/store/apps/details?id=com.ass.akhandasevasamasthan"
-    target="_blank"
-  >
-    <figure class="project-img">
-      <div class="project-item-icon-box">
-        <ion-icon name="eye-outline"></ion-icon>
-      </div>
-      <img
-        src="./assets/projects/akhandaseva.webp"
-        alt="Akhanda Seva Samsthan"
-        loading="lazy"
-      />
-    </figure>
-    <h3 class="project-title">Akhanda Seva Samsthan</h3>
-    <p class="project-category">Application</p>
-  </a>
-</li>
-<li
-  class="project-item active"
-  data-filter-item
-  data-category="applications"
->
-  <a
-    href="https://play.google.com/store/apps/details?id=com.farm.growtogetherfarmily"
-    target="_blank"
-  >
-    <figure class="project-img">
-      <div class="project-item-icon-box">
-        <ion-icon name="eye-outline"></ion-icon>
-      </div>
-      <img
-        src="./assets/projects/growtogetherfarmily.webp"
-        alt="Grow Together / Farmily"
-        loading="lazy"
-      />
-    </figure>
-    <h3 class="project-title">Grow Together / Farmily</h3>
-    <p class="project-category">Application</p>
-  </a>
-</li>
-
-
-
-            
-
-
-
-          
-            </ul>
-          </section>
-        </article>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="applications"
+              >
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.ass.akhandasevasamasthan"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/projects/akhandaseva.webp"
+                      alt="Akhanda Seva Samsthan"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Akhanda Seva Samsthan</h3>
+                  <p class="project-category">Application</p>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="applications"
+              >
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.farm.growtogetherfarmily"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/projects/growtogetherfarmily.webp"
+                      alt="Grow Together / Farmily"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Grow Together / Farmily</h3>
+                  <p class="project-category">Application</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
 
         <!--
         - #BLOG
