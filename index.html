@@ -602,470 +602,124 @@
         </section>
       </article>
 
-        <!--
-        - #PORTFOLIO
-      -->
+    <!-- PORTFOLIO -->
+<article class="portfolio" data-page="portfolio">
+  <header>
+    <h2 class="h2 article-title">Portfolio</h2>
+  </header>
 
-        <article class="portfolio" data-page="portfolio">
-          <header>
-            <h2 class="h2 article-title">Portfolio</h2>
-          </header>
+  <section class="projects">
+    <ul class="filter-list">
+      <li class="filter-item">
+        <button class="active" data-filter-btn>All</button>
+      </li>
+      <li class="filter-item">
+        <button data-filter-btn>Mobile Applications</button>
+      </li>
+      <li class="filter-item">
+        <button data-filter-btn>Web Applications</button>
+      </li>
+    </ul>
 
-          <section class="projects">
-            <ul class="filter-list">
-              <li class="filter-item">
-                <button class="active" data-filter-btn>All</button>
-              </li>
+    <div class="filter-select-box">
+      <button class="filter-select" data-select>
+        <div class="select-value" data-selecct-value>
+          Select category
+        </div>
+        <div class="select-icon">
+          <ion-icon name="chevron-down"></ion-icon>
+        </div>
+      </button>
 
-              <!-- <li class="filter-item">
-              <button data-filter-btn>Web design</button>
-            </li> -->
+      <ul class="select-list">
+        <li class="select-item">
+          <button data-select-item>All</button>
+        </li>
+        <li class="select-item">
+          <button data-select-item>Mobile Applications</button>
+        </li>
+        <li class="select-item">
+          <button data-select-item>Web Applications</button>
+        </li>
+      </ul>
+    </div>
 
-              <li class="filter-item">
-                <button data-filter-btn>Applications</button>
-              </li>
-
-              <li class="filter-item">
-                <button data-filter-btn>Web development</button>
-              </li>
-            </ul>
-
-            <div class="filter-select-box">
-              <button class="filter-select" data-select>
-                <div class="select-value" data-selecct-value>
-                  Select category
-                </div>
-
-                <div class="select-icon">
-                  <ion-icon name="chevron-down"></ion-icon>
-                </div>
-              </button>
-
-              <ul class="select-list">
-                <li class="select-item">
-                  <button data-select-item>All</button>
-                </li>
-
-                <!-- <li class="select-item">
-                <button data-select-item>Web design</button>
-              </li> -->
-
-                <li class="select-item">
-                  <button data-select-item>Applications</button>
-                </li>
-
-                <li class="select-item">
-                  <button data-select-item>Web development</button>
-                </li>
-              </ul>
+    <ul class="project-list">
+      <li class="project-item active" data-filter-item data-category="mobile applications">
+        <a href="https://apps.apple.com/in/app/anna-kirana/id1661523940" target="_blank">
+          <figure class="project-img">
+            <div class="project-item-icon-box">
+              <ion-icon name="eye-outline"></ion-icon>
             </div>
-
-            <ul class="project-list">
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="applications"
-              >
-                <a href="https://apps.apple.com/in/app/anna-kirana/id1661523940" target="_blank">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-                    <img
-                      src="./assets/projects/anna_kirana.webp"
-                      alt="Anna Kirana"
-                      loading="lazy"
-                    />
-                  </figure>
-                  <h3 class="project-title">Anna Kirana</h3>
-                  <p class="project-category">Application</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="applications"
-              >
-                <a href="https://play.google.com/store/apps/details?id=com.suki.erpmobileapp&hl=en_IN" target="_blank">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-                    <img
-                      src="./assets/projects/suki_erp.webp"
-                      alt="suki erp"
-                      loading="lazy"
-                    />
-                  </figure>
-                  <h3 class="project-title">SUKI ERP</h3>
-                  <p class="project-category">Application</p>
-                </a>
-              </li><li
-  class="project-item active"
-  data-filter-item
-  data-category="applications"
->
-  <a
-    href="https://play.google.com/store/apps/details?id=com.farm.growtogetherfarmily"
-    target="_blank"
-  >
-    <figure class="project-img">
-      <div class="project-item-icon-box">
-        <ion-icon name="eye-outline"></ion-icon>
-      </div>
-      <img
-        src="./assets/projects/growtogetherfarmily.webp"
-        alt="Grow Together / Farmily"
-        loading="lazy"
-      />
-    </figure>
-    <h3 class="project-title">Grow Together / Farmily</h3>
-    <p class="project-category">Application</p>
-  </a>
-</li>
-
-            
-  class="project-item active"
-  data-filter-item
-  data-category="applications"
->
-  <a
-    href="https://play.google.com/store/apps/details?id=com.ass.akhandasevasamasthan"
-    target="_blank"
-  >
-    <figure class="project-img">
-      <div class="project-item-icon-box">
-        <ion-icon name="eye-outline"></ion-icon>
-      </div>
-      <img
-        src="./assets/projects/akhandaseva.webp"
-        alt="Akhanda Seva Samsthan"
-        loading="lazy"
-      />
-    </figure>
-    <h3 class="project-title">Akhanda Seva Samsthan</h3>
-    <p class="project-category">Application</p>
-  </a>
-</li>
-
-<li
-  class="project-item active"
-  data-filter-item
-  data-category="applications"
->
-  <a
-    href="https://play.google.com/store/apps/details?id=com.civilbook.civilbookprovider"
-    target="_blank"
-  >
-    <figure class="project-img">
-      <div class="project-item-icon-box">
-        <ion-icon name="eye-outline"></ion-icon>
-      </div>
-      <img
-        src="./assets/projects/civilbookprovider.webp"
-        alt="CivilBook Provider"
-        loading="lazy"
-      />
-    </figure>
-    <h3 class="project-title">CivilBook Provider</h3>
-    <p class="project-category">Application</p>
-  </a>
-</li>
-
-
-            
-
- <li
-                class="project-item active"
-                data-filter-item
-                data-category="web development"
-              >
-                <a
-                  href="https://sreepixelss.web.app/"
-                  target="_blank"
-                >
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-                    <img
-                      src="./assets/projects/sreepixelss.png"
-                      alt="arrival"
-                      loading="lazy"
-                    />
-                  </figure>
-                  <h3 class="project-title">SreePixels -HD images website</h3>
-                  <p class="project-category">Web development</p>
-                </a>
-              </li>
-
-              <!-- <li
-                class="project-item active"
-                data-filter-item
-                data-category="applications"
-              >
-                <a
-                  href="https://play.google.com/store/apps/details?id=com.inflancer.saara"
-                  target="_blank"
-                >
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-                    <img
-                      src="./assets/projects/saara.png"
-                      alt="Saara"
-                      loading="lazy"
-                    />
-                  </figure>
-                  <h3 class="project-title">Saara</h3>
-                  <p class="project-category">Application</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="applications"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-                    <img
-                      src="./assets/projects/ifood.png"
-                      alt="ifood"
-                      loading="lazy"
-                    />
-                  </figure>
-                  <h3 class="project-title">ifood</h3>
-                  <p class="project-category">Application</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="applications"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-                    <img
-                      src="./assets/projects/merodate.png"
-                      alt="MeroDate"
-                      loading="lazy"
-                    />
-                  </figure>
-                  <h3 class="project-title">MeroDate</h3>
-                  <p class="project-category">Application</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="applications"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-                    <img
-                      src="./assets/projects/weatherapp.png"
-                      alt="Weather App"
-                      loading="lazy"
-                    />
-                  </figure>
-                  <h3 class="project-title">Weather App</h3>
-                  <p class="project-category">Application</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="applications"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-                    <img
-                      src="./assets/projects/music.png"
-                      alt="Music App"
-                      loading="lazy"
-                    />
-                  </figure>
-                  <h3 class="project-title">Music App</h3>
-                  <p class="project-category">Application</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="applications"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-                    <img
-                      src="./assets/projects/movieapp.png"
-                      alt="Movie App"
-                      loading="lazy"
-                    />
-                  </figure>
-                  <h3 class="project-title">Movie App</h3>
-                  <p class="project-category">Application</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web development"
-              >
-                <a
-                  href="https://sreepixelss.web.app/"
-                  target="_blank"
-                >
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-                    <img
-                      src="./assets/projects/github_user.png"
-                      alt="arrival"
-                      loading="lazy"
-                    />
-                  </figure>
-                  <h3 class="project-title">SreePixels -HD images website</h3>
-                  <p class="project-category">Web development</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web development"
-              >
-                <a href="https://carzone-seven.vercel.app/" target="_blank">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-                    <img
-                      src="./assets/projects/carzone.png"
-                      alt="arrival"
-                      loading="lazy"
-                    />
-                  </figure>
-                  <h3 class="project-title">Car Zone</h3>
-                  <p class="project-category">Web development</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web development"
-              >
-                <a href="https://movfix-bay.vercel.app/" target="_blank">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-                    <img
-                      src="./assets/projects/movfix.png"
-                      alt="arrival"
-                      loading="lazy"
-                    />
-                  </figure>
-                  <h3 class="project-title">Movfix</h3>
-                  <p class="project-category">Web development</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web development"
-              >
-                <a href="https://fitness-zone-xi.vercel.app/" target="_blank">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-                    <img
-                      src="./assets/projects/fitness_zone.png"
-                      alt="arrival"
-                      loading="lazy"
-                    />
-                  </figure>
-                  <h3 class="project-title">Fitness Zone</h3>
-                  <p class="project-category">Web development</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web development"
-              >
-                <a
-                  href="https://aakashx58.github.io/Ecommerce_website/"
-                  target="_blank"
-                >
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-                    <img
-                      src="./assets/projects/ecommerce.png"
-                      alt="arrival"
-                      loading="lazy"
-                    />
-                  </figure>
-                  <h3 class="project-title">E-Commerce</h3>
-                  <p class="project-category">Web development</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web development"
-              >
-                <a
-                  href="https://netflix-clone-olive-chi.vercel.app/"
-                  target="_blank"
-                >
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-                    <img
-                      src="./assets/projects/netflix.png"
-                      alt="metaspark"
-                      loading="lazy"
-                    />
-                  </figure>
-                  <h3 class="project-title">Netflix Clone</h3>
-                  <p class="project-category">Web development</p>
-                </a>
-              </li> -->
-            </ul>
-          </section>
-        </article>
+            <img src="./assets/projects/anna_kirana.webp" alt="Anna Kirana" loading="lazy" />
+          </figure>
+          <h3 class="project-title">Anna Kirana</h3>
+          <p class="project-category">Mobile Application</p>
+        </a>
+      </li>
+      <li class="project-item active" data-filter-item data-category="mobile applications">
+        <a href="https://play.google.com/store/apps/details?id=com.suki.erpmobileapp&hl=en_IN" target="_blank">
+          <figure class="project-img">
+            <div class="project-item-icon-box">
+              <ion-icon name="eye-outline"></ion-icon>
+            </div>
+            <img src="./assets/projects/suki_erp.webp" alt="suki erp" loading="lazy" />
+          </figure>
+          <h3 class="project-title">SUKI ERP</h3>
+          <p class="project-category">Mobile Application</p>
+        </a>
+      </li>
+      <li class="project-item active" data-filter-item data-category="mobile applications">
+        <a href="https://play.google.com/store/apps/details?id=com.farm.growtogetherfarmily" target="_blank">
+          <figure class="project-img">
+            <div class="project-item-icon-box">
+              <ion-icon name="eye-outline"></ion-icon>
+            </div>
+            <img src="./assets/projects/growtogetherfarmily.webp" alt="Grow Together / Farmily" loading="lazy" />
+          </figure>
+          <h3 class="project-title">Grow Together / Farmily</h3>
+          <p class="project-category">Mobile Application</p>
+        </a>
+      </li>
+      <li class="project-item active" data-filter-item data-category="mobile applications">
+        <a href="https://play.google.com/store/apps/details?id=com.ass.akhandasevasamasthan" target="_blank">
+          <figure class="project-img">
+            <div class="project-item-icon-box">
+              <ion-icon name="eye-outline"></ion-icon>
+            </div>
+            <img src="./assets/projects/akhandaseva.webp" alt="Akhanda Seva Samsthan" loading="lazy" />
+          </figure>
+          <h3 class="project-title">Akhanda Seva Samsthan</h3>
+          <p class="project-category">Mobile Application</p>
+        </a>
+      </li>
+      <li class="project-item active" data-filter-item data-category="mobile applications">
+        <a href="https://play.google.com/store/apps/details?id=com.civilbook.civilbookprovider" target="_blank">
+          <figure class="project-img">
+            <div class="project-item-icon-box">
+              <ion-icon name="eye-outline"></ion-icon>
+            </div>
+            <img src="./assets/projects/civilbookprovider.webp" alt="CivilBook Provider" loading="lazy" />
+          </figure>
+          <h3 class="project-title">CivilBook Provider</h3>
+          <p class="project-category">Mobile Application</p>
+        </a>
+      </li>
+      <li class="project-item active" data-filter-item data-category="web applications">
+        <a href="https://sreepixelss.web.app/" target="_blank">
+          <figure class="project-img">
+            <div class="project-item-icon-box">
+              <ion-icon name="eye-outline"></ion-icon>
+            </div>
+            <img src="./assets/projects/sreepixelss.png" alt="SreePixels" loading="lazy" />
+          </figure>
+          <h3 class="project-title">SreePixels - HD Images Website</h3>
+          <p class="project-category">Web Application</p>
+        </a>
+      </li>
+    </ul>
+  </section>
+</article>
 
         <!--
         - #BLOG
