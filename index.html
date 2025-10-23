@@ -1,749 +1,731 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sreenu Chandaka - Flutter Developer Portfolio</title>
-  <link rel="shortcut icon" href="./assets/images/professional_pic.png" type="image/x-icon">
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sreenu Chandaka - Full-Stack Developer Portfolio</title>
 
-<body>
-  <main>
-    <aside class="sidebar" data-sidebar>
-      <div class="sidebar-info">
-        <a href="https://iili.io/2LR2gCG.png" target="_blank" rel="noopener noreferrer" title="Click me!">
-          <figure class="avatar-box">
-            <img src="./assets/images/professional_pic.png" alt="Sreenu Chandaka" width="80">
-            <span class="active-status" title="Available for work!"></span>
-          </figure>
-        </a>
-        <div class="info-content">
-          <h1 class="name" title="Sreenu Chandaka">Sreenu Chandaka</h1>
-          <p class="title">Full-Stack Software Engineer</p>
+    <link
+      rel="shortcut icon"
+      href="./assets/images/professional_pic.png"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <main>
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <a
+            href="https://iili.io/2LR2gCG.png"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Click me!"
+          >
+            <figure class="avatar-box">
+              <img
+                src="./assets/images/professional_pic.png"
+                alt="Sreenu Chandaka"
+                width="80"
+              />
+              <span class="active-status" title="Available for work!"></span>
+            </figure>
+          </a>
+          <div class="info-content">
+            <h1 class="name" title="Sreenu Chandaka">Sreenu Chandaka</h1>
+            <p class="title">Full-Stack Developer</p>
+          </div>
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
         </div>
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-      </div>
 
-      <div class="sidebar-info_more">
-        <div class="separator"></div>
-        <ul class="contacts-list">
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-              <a href="mailto:chandakasreenu0@gmail.com" class="contact-link">chandakasreenu0@gmail.com</a>
-            </div>
-          </li>
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
 
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-              <a href="tel:+916301485598" class="contact-link">+91 6301485598</a>
-            </div>
-          </li>
-
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-              <address>Vijayawada, India</address>
-            </div>
-          </li>
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/sreenuchandaka/" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-          <li class="social-item">
-            <a href="https://github.com/Sreenu-Chandaka" class="social-link">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </aside>
-
-    <div class="main-content">
-      <nav class="navbar">
-        <ul class="navbar-list">
-          <li class="navbar-item">
-            <button class="navbar-link active" data-nav-link>About</button>
-          </li>
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
-          </li>
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-        </ul>
-      </nav>
-
-      <!-- ABOUT -->
-      <article class="about active" data-page="about">
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            Full-Stack Software Engineer specializing in end-to-end application development across mobile, web, and backend systems. I build scalable, cross-platform applications using Flutter for frontend (Android, iOS, Web, Desktop, TV), complemented by robust backend architectures with Spring Boot and Node.js. My expertise spans the entire software development lifecycle, from database design to deployment.
-          </p>
-
-          <p>
-            I architect complete solutions that bridge frontend excellence with backend scalability. Proficient in building RESTful APIs, microservices, and real-time systems, while maintaining clean code practices and modern architectural patterns. My native development skills in Swift/SwiftUI and Kotlin/Jetpack Compose enable platform-specific optimizations when needed.
-          </p>
-
-          <p style="margin-top: 15px;">
-            <strong>Core Competencies:</strong>
-          </p>
-          <ul>
-            <li>• Frontend Development: Expert in Flutter (Dart) with cross-platform apps on Android, iOS, Web, Desktop, and TV platforms</li>
-            <li>• Backend Development: Spring Boot, Node.js/Express.js, RESTful APIs, Microservices architecture, RBAC</li>
-            <li>• Native Development: Swift/SwiftUI and Kotlin/Jetpack Compose for platform-specific implementations</li>
-            <li>• Database & Storage: PostgreSQL, MySQL, MS SQL, Firebase Firestore, MongoDB, Hive, SQLite</li>
-            <li>• Architecture Patterns: Clean Architecture, MVC, MVVM, BLoC, Riverpod, GetX for scalable solutions</li>
-            <li>• Real-time Systems: WebSockets, Socket.IO, MQTT for live tracking, chat, and notifications</li>
-            <li>• APIs & Integration: REST, GraphQL, third-party integrations (Payment gateways, Maps, Auth)</li>
-            <li>• Security: JWT, OAuth, Firebase Auth, Biometric authentication, role-based access control</li>
-            <li>• DevOps & Tools: Git, CI/CD (GitHub Actions), Docker, Fastlane, Play Store/App Store deployment</li>
-          </ul>
-
-          <p>
-            Looking to collaborate on innovative full-stack solutions? Check out my portfolio or let's connect to discuss your project!
-          </p>
-        </section>
-
-        <!-- SERVICES -->
-        <section class="service">
-          <h3 class="h3 service-title">What I'm Doing</h3>
-
-          <ul class="service-list">
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
               </div>
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Mobile & Web Development</h4>
-                <p class="service-item-text">
-                  Building cross-platform Flutter applications for Android, iOS, Web, Desktop, and TV with native performance and seamless user experiences.
-                </p>
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+                <a href="mailto:chandakasreenu0@gmail.com" class="contact-link">chandakasreenu0@gmail.com</a>
               </div>
             </li>
 
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="development icon" width="40">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
               </div>
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Backend Architecture</h4>
-                <p class="service-item-text">
-                  Designing and implementing scalable backend systems with Spring Boot and Node.js, including RESTful APIs, microservices, and database optimization.
-                </p>
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
+                <a href="tel:+916301485598" class="contact-link">+91 6301485598</a>
               </div>
             </li>
 
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg" alt="design icon" width="40">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
               </div>
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Full-Stack Solutions</h4>
-                <p class="service-item-text">
-                  End-to-end application development from database design to deployment, including real-time systems, payment integrations, and cloud infrastructure.
-                </p>
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+                <address>Vijayawada, Andhra Pradesh, India</address>
               </div>
             </li>
           </ul>
-        </section>
 
-        <!-- SKILLS -->
-        <section class="clients">
-          <h3 class="h3 clients-title">Technical Skills</h3>
+          <div class="separator"></div>
 
-          <ul class="clients-list has-scrollbar">
-            <li class="clients-item">
-              <a href="https://flutter.dev/" target="_blank">
-                <img src="./assets/skills/Flutter.svg" alt="Flutter">
+          <ul class="social-list">
+            <li class="social-item">
+              <a
+                href="https://www.linkedin.com/in/sreenuchandaka/"
+                class="social-link"
+                target="_blank"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
               </a>
             </li>
-            <li class="clients-item">
-              <a href="https://dart.dev/" target="_blank">
-                <img src="./assets/skills/Dart.svg" alt="Dart">
-              </a>
-            </li>
-            <li class="clients-item">
-              <a href="https://firebase.google.com/" target="_blank">
-                <img src="./assets/skills/Firebase.svg" alt="Firebase">
-              </a>
-            </li>
-            <li class="clients-item">
-              <a href="https://developer.android.com/studio" target="_blank">
-                <img src="./assets/skills/AndroidStudio.svg" alt="Android Studio">
-              </a>
-            </li>
-            <li class="clients-item">
-              <a href="https://developer.apple.com/xcode/" target="_blank">
-                <img src="./assets/skills/Xcode.svg" alt="Xcode">
-              </a>
-            </li>
-            <li class="clients-item">
-              <a href="https://www.postman.com/" target="_blank">
-                <img src="./assets/skills/Postman.svg" alt="Postman">
-              </a>
-            </li>
-            <li class="clients-item">
-              <a href="https://www.figma.com/" target="_blank">
-                <img src="./assets/skills/Figma.svg" alt="Figma">
+
+            <li class="social-item">
+              <a href="https://github.com/Sreenu-Chandaka" class="social-link" target="_blank">
+                <ion-icon name="logo-github"></ion-icon>
               </a>
             </li>
           </ul>
-        </section>
-      </article>
+        </div>
+      </aside>
 
-      <!-- RESUME -->
-      <article class="resume" data-page="resume">
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="timeline">
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">
-                Rajiv Gandhi University of Knowledge Technologies
-              </h4>
-              <p class="timeline-text">
-                Bachelor of Technology in Electronics and Communication Engineering
-              </p>
-              <span>Srikakulam, India • CGPA: 8.7 / 10</span>
-              <p class="timeline-text">Relevant Coursework: Software Architecture, DBMS, Enterprise Computing, Mobile Computing, IoT</p>
-            </li>
-          </ol>
-        </section>
-
-        <section class="timeline">
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-            <h3 class="h3">Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">FUGEN Webtech Pvt Ltd</h4>
-              <p class="timeline-text">Full-Stack Software Engineer</p>
-              <span>Vijayawada, Andhra Pradesh • Present</span>
-              <ul class="timeline-text">
-                <li>&#8226; Developing end-to-end cross-platform mobile and web applications using Flutter and React.js</li>
-                <li>&#8226; Building scalable backend services with Spring Boot and Node.js for enterprise applications</li>
-                <li>&#8226; Implementing native integrations using Swift/SwiftUI for iOS and Kotlin/Jetpack Compose for Android</li>
-                <li>&#8226; Designing RESTful APIs and real-time features with WebSockets for seamless user experiences</li>
-              </ul>
+      <div class="main-content">
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
             </li>
 
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Suki Software Solutions</h4>
-              <p class="timeline-text">Full-Stack Software Engineer</p>
-              <span>Chennai, India</span>
-              <ul class="timeline-text">
-                <li>&#8226; Spearheaded full-stack ERP development with Flutter frontend + Spring Boot backend, driving 30% surge in user engagement</li>
-                <li>&#8226; Architected and optimized REST APIs, enhancing UI/UX flows and improving usability score by 2.1 points (out of 5)</li>
-                <li>&#8226; Implemented push notification system and session management, retaining 18% more users</li>
-                <li>&#8226; Developed role-based dashboards and real-time alerts for manufacturing workflows</li>
-              </ul>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
             </li>
 
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Noki Technologies Pvt Ltd</h4>
-              <p class="timeline-text">Full-Stack Software Engineer</p>
-              <span>Hyderabad, India</span>
-              <ul class="timeline-text">
-                <li>&#8226; Delivered full-stack logistics and medical IoT apps with Flutter frontend and Node.js backend</li>
-                <li>&#8226; Built real-time location tracking, payment gateway integration, and support chat via Socket.IO</li>
-                <li>&#8226; Developed and optimized REST + Socket APIs with PostgreSQL database, reducing response time by 40%</li>
-                <li>&#8226; Minimized crash frequency by 30% through structured error handling and comprehensive testing</li>
-              </ul>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portfolio</button>
             </li>
 
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Freelance Mobile Developer</h4>
-              <p class="timeline-text">Independent Contractor</p>
-              <span>Remote</span>
-              <ul class="timeline-text">
-                <li>&#8226; Delivered multiple cross-platform Flutter apps with Firebase Authentication and Firestore integration</li>
-                <li>&#8226; Built modular architectures for CRM and volunteer management apps with role-based dashboards</li>
-                <li>&#8226; Implemented CI/CD workflows and handled complete app store deployment for clients</li>
-              </ul>
-            </li>
-          </ol>
-        </section>
-
-        <section class="timeline">
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="code-working-outline"></ion-icon>
-            </div>
-            <h3 class="h3">Key Projects</h3>
-          </div>
-
-          <ol class="timeline-list">
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">CivilBook - Service Platform</h4>
-              <p class="timeline-text">Full-Stack Multi-Platform Application</p>
-              <span>Flutter, Firebase, Node.js, PostgreSQL, Socket.IO</span>
-              <ul class="timeline-text">
-                <li>&#8226; Architected full-stack dual-app system handling 4K+ monthly transactions and 300+ daily service updates</li>
-                <li>&#8226; Built Node.js backend with PostgreSQL database and RESTful APIs for service management</li>
-                <li>&#8226; Developed Flutter frontend running on Android, iOS, Web, macOS, and Android TV</li>
-                <li>&#8226; Implemented real-time booking, order tracking, Socket.IO chat, and Hive-based offline sync</li>
-                <li>&#8226; Achieved 6-month growth to 3,000+ users and 500+ active providers through organic referrals</li>
-              </ul>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Blog</button>
             </li>
 
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Suki ERP - Production Management</h4>
-              <p class="timeline-text">Full-Stack Enterprise System</p>
-              <span>Flutter, Spring Boot, REST APIs, JWT, PostgreSQL</span>
-              <ul class="timeline-text">
-                <li>&#8226; Developed complete ERP solution with Spring Boot backend and Flutter cross-platform frontend</li>
-                <li>&#8226; Built inventory and order tracking with QR/barcode scanning; reduced stockout incidents by 35%</li>
-                <li>&#8226; Designed RESTful APIs with JWT authentication and role-based access control</li>
-                <li>&#8226; Integrated real-time alerts and dashboards, improving supervisor decision-making by 30%</li>
-              </ul>
-            </li>
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Sales Table - Field Sales Tracker</h4>
-              <p class="timeline-text">Full-Stack Performance Management System</p>
-              <span>Flutter, Firebase Firestore, Cloud Functions, FCM</span>
-              <ul class="timeline-text">
-                <li>&#8226; Engineered full-stack multi-role app with Firebase backend and Flutter frontend for 50+ personnel</li>
-                <li>&#8226; Built Cloud Functions for automated reporting and data aggregation</li>
-                <li>&#8226; Boosted task compliance by 40% through real-time task assignment and target tracking</li>
-                <li>&#8226; Reduced manual reporting overhead by 70% with automated synchronization</li>
-              </ul>
-            </li>
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Nokonsult - Student Consulting Platform</h4>
-              <p class="timeline-text">Full-Stack Education Technology</p>
-              <span>Flutter, Node.js, PostgreSQL, REST, WebSockets</span>
-              <ul class="timeline-text">
-                <li>&#8226; Developed complete platform connecting students with universities using hybrid REST + WebSocket APIs</li>
-                <li>&#8226; Built Node.js backend with PostgreSQL for document verification and KYC processing</li>
-                <li>&#8226; Implemented multi-device responsive Flutter frontend with real-time updates</li>
-              </ul>
-            </li>
-          </ol>
-        </section>
-
-        <section class="timeline">
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="heart-outline"></ion-icon>
-            </div>
-            <h3 class="h3">Contributions</h3>
-          </div>
-
-          <ol class="timeline-list">
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Akhanda Seva Samasthan</h4>
-              <p class="timeline-text">NGO Operations Platform (Pro Bono)</p>
-              <span>Flutter, Firebase, Cloud Functions</span>
-              <ul class="timeline-text">
-                <li>&#8226; Built and maintain Flutter app for NGO operations including donations, events, and volunteers</li>
-                <li>&#8226; Integrated certificate generator, location tracking, and milestone-based achievements</li>
-                <li>&#8226; Developed scalable volunteer tracking with role dashboards and live updates</li>
-              </ul>
-            </li>
-          </ol>
-        </section>
-      </article>
-
-      <!-- PORTFOLIO -->
-      <article class="portfolio" data-page="portfolio">
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-          <ul class="filter-list">
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-            <li class="filter-item">
-              <button data-filter-btn>Mobile Applications</button>
-            </li>
-            <li class="filter-item">
-              <button data-filter-btn>Web Applications</button>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>
             </li>
           </ul>
+        </nav>
 
-          <div class="filter-select-box">
-            <button class="filter-select" data-select>
-              <div class="select-value" data-selecct-value>Select category</div>
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-            </button>
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
 
-            <ul class="select-list">
-              <li class="select-item">
-                <button data-select-item>All</button>
+          <section class="about-text">
+            <p>
+              Full-Stack Developer with deep expertise in building scalable cross-platform applications for Android, iOS, Web, Desktop, and Android TV. I specialize in Flutter development with proficiency in native iOS (Swift, SwiftUI) and Android (Kotlin, Jetpack Compose) for platform-specific implementations. My backend expertise spans Spring Boot, Node.js, and microservices architecture with PostgreSQL and MySQL databases.
+            </p>
+
+            <p>
+              <strong>Core Competencies:</strong>
+              <ul>
+                <li>• <strong>Cross-Platform Development:</strong> Flutter (Expert), building responsive apps for multiple platforms from a single codebase</li>
+                <li>• <strong>Native Development:</strong> Swift, SwiftUI, Kotlin, Jetpack Compose for platform-specific optimizations</li>
+                <li>• <strong>Backend Engineering:</strong> Spring Boot, Node.js, Express.js, RESTful APIs, Microservices, WebSockets, MQTT</li>
+                <li>• <strong>Database Management:</strong> PostgreSQL, MySQL, MS SQL, Firebase Firestore, Hive, SQLite</li>
+                <li>• <strong>Architecture & Patterns:</strong> Clean Architecture, MVC, MVVM, BLoC, Riverpod, GetX</li>
+                <li>• <strong>DevOps & Deployment:</strong> CI/CD (GitHub Actions), Docker, Fastlane, App Store/Play Store deployment</li>
+              </ul>
+            </p>
+
+            <p>
+              I've delivered production-grade applications handling 4K+ monthly transactions, built real-time systems with WebSocket integration, and architected scalable ERP solutions. My focus is on creating high-performance, user-centric applications with clean code and robust architecture.
+            </p>
+
+            <p>
+              Looking to collaborate on innovative full-stack solutions? Check out my portfolio or let's connect to discuss your project!
+            </p>
+          </section>
+
+          <section class="service">
+            <h3 class="h3 service-title">What I Do</h3>
+
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-dev.svg"
+                    alt="Full-Stack Development icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Full-Stack Development</h4>
+
+                  <p class="service-item-text">
+                    Building end-to-end scalable applications with modern frontend frameworks and robust backend architectures.
+                  </p>
+                </div>
               </li>
-              <li class="select-item">
-                <button data-select-item>Mobile Applications</button>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-app.svg"
+                    alt="Cross-Platform Apps icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Cross-Platform Applications</h4>
+
+                  <p class="service-item-text">
+                    Expert development of Flutter apps for Android, iOS, Web, Desktop (macOS, Windows, Linux), and Android TV.
+                  </p>
+                </div>
               </li>
-              <li class="select-item">
-                <button data-select-item>Web Applications</button>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-design.svg"
+                    alt="Backend API icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Backend & API Development</h4>
+
+                  <p class="service-item-text">
+                    Creating RESTful APIs, microservices, and real-time systems with Spring Boot, Node.js, and scalable databases.
+                  </p>
+                </div>
               </li>
             </ul>
-          </div>
+          </section>
 
-          <ul class="project-list">
-            <li class="project-item active" data-filter-item data-category="mobile applications">
-              <a href="https://apps.apple.com/in/app/anna-kirana/id1661523940" target="_blank">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/projects/anna_kirana.webp" alt="Anna Kirana" loading="lazy">
-                </figure>
-                <h3 class="project-title">Anna Kirana</h3>
-                <p class="project-category">E-commerce Platform</p>
-              </a>
-            </li>
+          <section class="clients">
+            <h3 class="h3 clients-title">Technical Skills</h3>
 
-            <li class="project-item active" data-filter-item data-category="mobile applications">
-              <a href="https://play.google.com/store/apps/details?id=com.suki.erpmobileapp&hl=en_IN" target="_blank">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/projects/suki_erp.webp" alt="SUKI ERP" loading="lazy">
-                </figure>
-                <h3 class="project-title">SUKI ERP</h3>
-                <p class="project-category">Production Management System</p>
-              </a>
-            </li>
+            <ul class="clients-list has-scrollbar">
+              <li class="clients-item">
+                <a href="https://flutter.dev/" target="_blank">
+                  <img src="./assets/skills/Flutter.svg" alt="Flutter" />
+                </a>
+              </li>
 
-            <li class="project-item active" data-filter-item data-category="mobile applications">
-              <a href="https://play.google.com/store/apps/details?id=com.civilbook.civilbookprovider" target="_blank">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/projects/civilbookprovider.webp" alt="CivilBook" loading="lazy">
-                </figure>
-                <h3 class="project-title">CivilBook Provider</h3>
-                <p class="project-category">Service Marketplace • Multi-Platform</p>
-              </a>
-            </li>
+              <li class="clients-item">
+                <a href="https://dart.dev/" target="_blank">
+                  <img src="./assets/skills/Dart.svg" alt="Dart" />
+                </a>
+              </li>
 
-            <li class="project-item active" data-filter-item data-category="mobile applications">
-              <a href="https://play.google.com/store/apps/details?id=com.farm.growtogetherfarmily" target="_blank">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/projects/growtogetherfarmily.webp" alt="Farmily" loading="lazy">
-                </figure>
-                <h3 class="project-title">Grow Together / Farmily</h3>
-                <p class="project-category">Agricultural Platform</p>
-              </a>
-            </li>
+              <li class="clients-item">
+                <a href="https://spring.io/projects/spring-boot" target="_blank">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot" style="width: 40px; height: 40px;" />
+                </a>
+              </li>
 
-            <li class="project-item active" data-filter-item data-category="mobile applications">
-              <a href="https://play.google.com/store/apps/details?id=com.ass.akhandasevasamasthan" target="_blank">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/projects/akhandaseva.webp" alt="Akhanda Seva" loading="lazy">
-                </figure>
-                <h3 class="project-title">Akhanda Seva Samsthan</h3>
-                <p class="project-category">NGO Management • Pro Bono</p>
-              </a>
-            </li>
+              <li class="clients-item">
+                <a href="https://nodejs.org/" target="_blank">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" style="width: 40px; height: 40px;" />
+                </a>
+              </li>
 
-            <li class="project-item active" data-filter-item data-category="web applications">
-              <a href="https://sreepixelss.web.app/" target="_blank">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/projects/sreepixelss.png" alt="SreePixels" loading="lazy">
-                </figure>
-                <h3 class="project-title">SreePixels</h3>
-                <p class="project-category">HD Images Platform</p>
-              </a>
-            </li>
-          </ul>
-        </section>
-      </article>
+              <li class="clients-item">
+                <a href="https://www.postgresql.org/" target="_blank">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" style="width: 40px; height: 40px;" />
+                </a>
+              </li>
 
-      <!-- BLOG -->
-      <article class="blog" data-page="blog">
-        <header>
-          <h2 class="h2 article-title">Blog</h2>
-        </header>
+              <li class="clients-item">
+                <a href="https://firebase.google.com/" target="_blank">
+                  <img src="./assets/skills/Firebase.svg" alt="Firebase" />
+                </a>
+              </li>
 
-        <section class="blog-posts">
-          <ul class="blog-posts-list">
-            <li class="blog-post-item">
-              <a href="https://medium.com/@chandakasreenu0/the-getx-paradox-inside-flutters-most-controversial-state-management-package-5cbd9e6a9b59" target="_blank">
-                <figure class="blog-banner-box">
-                  <img src="./assets/blogs/getx_flutter.jpg" alt="GetX Paradox" loading="lazy">
-                </figure>
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <p class="blog-category">Flutter</p>
-                    <span class="dot"></span>
-                    <time datetime="2024-11-28">Nov 28, 2024</time>
-                  </div>
-                  <h3 class="h3 blog-item-title">
-                    The GetX Paradox: Inside Flutter's Most Controversial State Management Package
-                  </h3>
-                  <p class="blog-text">
-                    In the ever-evolving world of Flutter development, few packages have sparked as much passionate debate as GetX. Loved by some, criticized by others, GetX represents a fascinating case study in developer tooling that challenges our conventional understanding of what makes a great state management solution.
-                  </p>
-                </div>
-              </a>
-            </li>
+              <li class="clients-item">
+                <a href="https://www.docker.com/" target="_blank">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" style="width: 40px; height: 40px;" />
+                </a>
+              </li>
 
-            <li class="blog-post-item">
-              <a href="https://medium.com/@chandakasreenu0/flutter-web-when-to-use-it-and-when-to-avoid-it-25cf52f447d6" target="_blank">
-                <figure class="blog-banner-box">
-                  <img src="./assets/blogs/flutter_web.png" alt="Flutter Web" loading="lazy">
-                </figure>
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <p class="blog-category">Flutter</p>
-                    <span class="dot"></span>
-                    <time datetime="2025-02-01">Feb 01, 2025</time>
-                  </div>
-                  <h3 class="h3 blog-item-title">
-                    Flutter Web: When to Use It and When to Avoid It
-                  </h3>
-                  <p class="blog-text">
-                    Flutter has revolutionized cross-platform app development, enabling developers to build beautiful, natively compiled applications for mobile and desktop from a single codebase. With Flutter Web, Google extended this vision to the browser. However, while Flutter Web is a powerful tool, it's not a silver bullet for every web project.
-                  </p>
-                </div>
-              </a>
-            </li>
-          </ul>
-        </section>
-      </article>
+              <li class="clients-item">
+                <a href="https://www.postman.com/" target="_blank">
+                  <img src="./assets/skills/Postman.svg" alt="Postman" />
+                </a>
+              </li>
 
-      <!-- CONTACT -->
-      <article class="contact" data-page="contact">
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
+              <li class="clients-item">
+                <a href="https://www.figma.com/" target="_blank">
+                  <img src="./assets/skills/Figma.svg" alt="Figma" />
+                </a>
+              </li>
 
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe 
-              width="100%" 
-              height="600" 
-              src="https://www.google.com/maps?width=100%25&height=600&hl=en&q=Kanuru,+Vijayawada,+Andhra+Pradesh+520007,+India+(My+Business+Name)&t=&z=15&ie=UTF8&iwloc=B&output=embed" 
-              frameborder="0" 
-              allowfullscreen="">
-            </iframe>
-          </figure>
-        </section>
+              <li class="clients-item">
+                <a href="https://developer.android.com/studio" target="_blank">
+                  <img src="./assets/skills/AndroidStudio.svg" alt="Android Studio" />
+                </a>
+              </li>
 
-        <section class="contact-form">
-          <h3 class="h3 form-title">Contact Form</h3>
+              <li class="clients-item">
+                <a href="https://developer.apple.com/xcode/" target="_blank">
+                  <img src="./assets/skills/Xcode.svg" alt="Xcode" />
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
 
-          <form action="https://api.web3forms.com/submit" method="POST" class="form" data-form>
-            <input type="hidden" name="access_key" value="f60d2733-e8fc-432d-87c5-0038b8fc16ad">
+        <article class="resume" data-page="resume">
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
 
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+              <h3 class="h3">Education</h3>
             </div>
 
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Rajiv Gandhi University of Knowledge Technologies
+                </h4>
+                <p class="timeline-text">
+                  Bachelor of Technology in Electronics and Communication Engineering
+                </p>
+                <span>Srikakulam, India • Graduated: August 2023</span>
+                <p class="timeline-text">CGPA: 8.7 / 10</p>
+                <p class="timeline-text">Relevant Coursework: Software Architecture, DBMS, Enterprise Computing, Mobile Computing, Database Systems, IoT</p>
+              </li>
+            </ol>
+          </section>
 
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-          </form>
-        </section>
-      </article>
-    </div>
-  </main>
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="briefcase-outline"></ion-icon>
+              </div>
+              <h3 class="h3">Experience</h3>
+            </div>
 
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-  
-  <script>
-    'use strict';
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">FUGEN Webtech Pvt Ltd</h4>
+                <p class="timeline-text">Flutter Developer</p>
+                <span>Vijayawada, Andhra Pradesh, India • Present</span>
+                <ul class="timeline-text">
+                  <li>• Developing cross-platform mobile and web applications using Flutter framework</li>
+                  <li>• Implementing native integrations using Swift/SwiftUI for iOS and Kotlin/Jetpack Compose for Android</li>
+                  <li>• Building scalable backend integrations and real-time features for enterprise applications</li>
+                  <li>• Collaborating with design and backend teams to deliver high-performance, user-centric solutions</li>
+                </ul>
+              </li>
 
-    // element toggle function
-    const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Suki Software Solutions</h4>
+                <p class="timeline-text">Flutter Developer</p>
+                <span>Chennai, India • Aug 2024 — Present</span>
+                <ul class="timeline-text">
+                  <li>• Spearheaded cross-platform ERP development with Flutter + Spring Boot, driving 30% surge in user engagement</li>
+                  <li>• Reworked REST API integration and enhanced UI/UX flows, improving usability score by 2.1 points (out of 5)</li>
+                  <li>• Retained 18% more users through push notifications, onboarding animations, and session memory</li>
+                  <li>• Built inventory and order tracking using QR/barcode scanning; reduced stockout incidents by 35%</li>
+                </ul>
+              </li>
 
-    // sidebar variables
-    const sidebar = document.querySelector("[data-sidebar]");
-    const sidebarBtn = document.querySelector("[data-sidebar-btn]");
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Noki Technologies Pvt Ltd</h4>
+                <p class="timeline-text">Flutter Developer</p>
+                <span>Hyderabad, India • Aug 2023 — Jul 2024 • 1 year</span>
+                <ul class="timeline-text">
+                  <li>• Delivered logistics and medical IoT apps with location tracking and payment gateway integration</li>
+                  <li>• Incorporated real-time support chat via Socket.IO, reducing ticket resolution time by 40%</li>
+                  <li>• Minimized crash frequency by 30% through structured error handling and release monitoring</li>
+                  <li>• Engineered service request and chat modules using Flutter with Node.js + PostgreSQL backend</li>
+                  <li>• Developed and optimized REST + Socket APIs for real-time communication</li>
+                </ul>
+              </li>
 
-    // sidebar toggle functionality for mobile
-    sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Freelance Full-Stack Developer</h4>
+                <p class="timeline-text">Independent Contractor</p>
+                <span>Remote</span>
+                <ul class="timeline-text">
+                  <li>• Delivered multiple cross-platform Flutter apps with Firebase Authentication and Firestore integration</li>
+                  <li>• Built modular architectures for CRM and volunteer management apps with role-based dashboards</li>
+                  <li>• Implemented CI/CD workflows and handled complete app store deployment for clients</li>
+                </ul>
+              </li>
+            </ol>
+          </section>
 
-    // testimonials variables
-    const testimonialsItem = document.querySelectorAll("[data-testimonials-item]");
-    const modalContainer = document.querySelector("[data-modal-container]");
-    const modalCloseBtn = document.querySelector("[data-modal-close-btn]");
-    const overlay = document.querySelector("[data-overlay]");
+          <section class="skill">
+            <h3 class="h3 skills-title">Technical Expertise</h3>
 
-    // modal variable
-    const modalImg = document.querySelector("[data-modal-img]");
-    const modalTitle = document.querySelector("[data-modal-title]");
-    const modalText = document.querySelector("[data-modal-text]");
+            <ul class="skills-list content-card">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Flutter & Cross-Platform</h5>
+                  <data value="95">95%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 95%"></div>
+                </div>
+              </li>
 
-    // modal toggle function
-    const testimonialsModalFunc = function () {
-      modalContainer.classList.toggle("active");
-      overlay.classList.toggle("active");
-    }
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Backend Development (Spring Boot, Node.js)</h5>
+                  <data value="85">85%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 85%"></div>
+                </div>
+              </li>
 
-    // add click event to all modal items
-    for (let i = 0; i < testimonialsItem.length; i++) {
-      testimonialsItem[i].addEventListener("click", function () {
-        modalImg.src = this.querySelector("[data-testimonials-avatar]").src;
-        modalImg.alt = this.querySelector("[data-testimonials-avatar]").alt;
-        modalTitle.innerHTML = this.querySelector("[data-testimonials-title]").innerHTML;
-        modalText.innerHTML = this.querySelector("[data-testimonials-text]").innerHTML;
-        testimonialsModalFunc();
-      });
-    }
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Database Management (PostgreSQL, MySQL)</h5>
+                  <data value="90">90%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 90%"></div>
+                </div>
+              </li>
 
-    // add click event to modal close button
-    modalCloseBtn.addEventListener("click", testimonialsModalFunc);
-    overlay.addEventListener("click", testimonialsModalFunc);
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Native Development (Swift, Kotlin)</h5>
+                  <data value="80">80%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
 
-    // custom select variables
-    const select = document.querySelector("[data-select]");
-    const selectItems = document.querySelectorAll("[data-select-item]");
-    const selectValue = document.querySelector("[data-selecct-value]");
-    const filterBtn = document.querySelectorAll("[data-filter-btn]");
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">DevOps & CI/CD</h5>
+                  <data value="75">75%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 75%"></div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
 
-    select.addEventListener("click", function () { elementToggleFunc(this); });
+        <article class="portfolio" data-page="portfolio">
+          <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+          </header>
 
-    // add event in all select items
-    for (let i = 0; i < selectItems.length; i++) {
-      selectItems[i].addEventListener("click", function () {
-        let selectedValue = this.innerText.toLowerCase();
-        selectValue.innerText = this.innerText;
-        elementToggleFunc(select);
-        filterFunc(selectedValue);
-      });
-    }
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
+              </li>
+              <li class="filter-item">
+                <button data-filter-btn>Mobile Applications</button>
+              </li>
+              <li class="filter-item">
+                <button data-filter-btn>Web Applications</button>
+              </li>
+              <li class="filter-item">
+                <button data-filter-btn>Full-Stack Projects</button>
+              </li>
+            </ul>
 
-    // filter variables
-    const filterItems = document.querySelectorAll("[data-filter-item]");
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value">
+                  Select category
+                </div>
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
 
-    const filterFunc = function (selectedValue) {
-      for (let i = 0; i < filterItems.length; i++) {
-        if (selectedValue === "all") {
-          filterItems[i].classList.add("active");
-        } else if (selectedValue === filterItems[i].dataset.category) {
-          filterItems[i].classList.add("active");
-        } else {
-          filterItems[i].classList.remove("active");
-        }
-      }
-    }
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
+                <li class="select-item">
+                  <button data-select-item>Mobile Applications</button>
+                </li>
+                <li class="select-item">
+                  <button data-select-item>Web Applications</button>
+                </li>
+                <li class="select-item">
+                  <button data-select-item>Full-Stack Projects</button>
+                </li>
+              </ul>
+            </div>
 
-    // add event in all filter button items for large screen
-    let lastClickedBtn = filterBtn[0];
+            <ul class="project-list">
+              <li class="project-item active" data-filter-item data-category="full-stack projects">
+                <a href="https://play.google.com/store/apps/details?id=com.civilbook.civilbookprovider" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./assets/projects/civilbookprovider.webp" alt="CivilBook" loading="lazy" />
+                  </figure>
+                  <h3 class="project-title">CivilBook - Service Platform</h3>
+                  <p class="project-category">Full-Stack Application</p>
+                  <p class="project-description">Flutter + Node.js + PostgreSQL • 4K+ monthly transactions • Real-time tracking</p>
+                </a>
+              </li>
 
-    for (let i = 0; i < filterBtn.length; i++) {
-      filterBtn[i].addEventListener("click", function () {
-        let selectedValue = this.innerText.toLowerCase();
-        selectValue.innerText = this.innerText;
-        filterFunc(selectedValue);
-        lastClickedBtn.classList.remove("active");
-        this.classList.add("active");
-        lastClickedBtn = this;
-      });
-    }
+              <li class="project-item active" data-filter-item data-category="full-stack projects">
+                <a href="https://play.google.com/store/apps/details?id=com.suki.erpmobileapp&hl=en_IN" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./assets/projects/suki_erp.webp" alt="Suki ERP" loading="lazy" />
+                  </figure>
+                  <h3 class="project-title">SUKI ERP - Production Management</h3>
+                  <p class="project-category">Full-Stack Application</p>
+                  <p class="project-description">Flutter + Spring Boot • QR/Barcode scanning • JWT Auth</p>
+                </a>
+              </li>
 
-    // contact form variables
-    const form = document.querySelector("[data-form]");
-    const formInputs = document.querySelectorAll("[data-form-input]");
-    const formBtn = document.querySelector("[data-form-btn]");
+              <li class="project-item active" data-filter-item data-category="mobile applications">
+                <a href="https://apps.apple.com/in/app/anna-kirana/id1661523940" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./assets/projects/anna_kirana.webp" alt="Anna Kirana" loading="lazy" />
+                  </figure>
+                  <h3 class="project-title">Anna Kirana</h3>
+                  <p class="project-category">Mobile Application</p>
+                </a>
+              </li>
 
-    // add event to all form input field
-    for (let i = 0; i < formInputs.length; i++) {
-      formInputs[i].addEventListener("input", function () {
-        // check form validation
-        if (form.checkValidity()) {
-          formBtn.removeAttribute("disabled");
-        } else {
-          formBtn.setAttribute("disabled", "");
-        }
-      });
-    }
+              <li class="project-item active" data-filter-item data-category="mobile applications">
+                <a href="https://play.google.com/store/apps/details?id=com.farm.growtogetherfarmily" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./assets/projects/growtogetherfarmily.webp" alt="Grow Together" loading="lazy" />
+                  </figure>
+                  <h3 class="project-title">Grow Together / Farmily</h3>
+                  <p class="project-category">Mobile Application</p>
+                </a>
+              </li>
 
-    // page navigation variables
-    const navigationLinks = document.querySelectorAll("[data-nav-link]");
-    const pages = document.querySelectorAll("[data-page]");
+              <li class="project-item active" data-filter-item data-category="mobile applications">
+                <a href="https://play.google.com/store/apps/details?id=com.ass.akhandasevasamasthan" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./assets/projects/akhandaseva.webp" alt="Akhanda Seva Samsthan" loading="lazy" />
+                  </figure>
+                  <h3 class="project-title">Akhanda Seva Samsthan</h3>
+                  <p class="project-category">Mobile Application • Pro Bono</p>
+                  <p class="project-description">Flutter + Firebase • NGO operations • Volunteer tracking</p>
+                </a>
+              </li>
 
-    // add event to all nav link
-    for (let i = 0; i < navigationLinks.length; i++) {
-      navigationLinks[i].addEventListener("click", function () {
-        for (let i = 0; i < pages.length; i++) {
-          if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
-            pages[i].classList.add("active");
-            navigationLinks[i].classList.add("active");
-            window.scrollTo(0, 0);
-          } else {
-            pages[i].classList.remove("active");
-            navigationLinks[i].classList.remove("active");
-          }
-        }
-      });
-    }
-  </script>
-  
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <script src="./assets/js/experience-calculator.js"></script>
-</body>
+              <li class="project-item active" data-filter-item data-category="web applications">
+                <a href="https://sreepixelss.web.app/" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./assets/projects/sreepixelss.png" alt="SreePixels" loading="lazy" />
+                  </figure>
+                  <h3 class="project-title">SreePixels - HD Images Platform</h3>
+                  <p class="project-category">Web Application</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <article class="blog" data-page="blog">
+          <header>
+            <h2 class="h2 article-title">Blog</h2>
+          </header>
+
+          <section class="blog-posts">
+            <ul class="blog-posts-list">
+              <li class="blog-post-item">
+                <a
+                  href="https://medium.com/@chandakasreenu0/the-getx-paradox-inside-flutters-most-controversial-state-management-package-5cbd9e6a9b59"
+                  target="_blank"
+                >
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/blogs/getx_flutter.jpg"
+                      alt="The GetX Paradox"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Flutter</p>
+                      <span class="dot"></span>
+                      <time datetime="2024-11-28">Nov 28, 2024</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      The GetX Paradox: Inside Flutter's Most Controversial State Management Package
+                    </h3>
+
+                    <p class="blog-text">
+                      In the ever-evolving world of Flutter development, few packages have sparked as much passionate debate as GetX. Loved by some, criticized by others, GetX represents a fascinating case study in developer tooling that challenges our conventional understanding of what makes a great state management solution.
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="blog-post-item">
+                <a
+                  href="https://medium.com/@chandakasreenu0/flutter-web-when-to-use-it-and-when-to-avoid-it-25cf52f447d6"
+                  target="_blank"
+                >
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/blogs/flutter_web.png"
+                      alt="Flutter Web"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Flutter Web</p>
+                      <span class="dot"></span>
+                      <time datetime="2025-02-01">Feb 01, 2025</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      Flutter Web: When to Use It and When to Avoid It
+                    </h3>
+
+                    <p class="blog-text">
+                      Flutter has revolutionized cross-platform app development, enabling developers to build beautiful, natively compiled applications for mobile and desktop from a single codebase. With Flutter Web, Google extended this vision to the browser. However, while Flutter Web is a powerful tool, it's not a silver bullet for every web project.
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <article class="contact" data-page="contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
+
+          <section class="mapbox" data-mapbox>
+            <figure>
+              <iframe 
+                width="100%" 
+                height="600" 
+                src="https://www.google.com/maps?width=100%25&height=600&hl=en&q=Kanuru,+Vijayawada,+Andhra+Pradesh+520007,+India+(My+Business+Name)&t=&z=15&ie=UTF8&iwloc=B&output=embed" 
+                frameborder="0" 
+                allowfullscreen="">
+              </iframe>
+            </figure>
+          </section>
+
+          <section class="contact-form">
+            <h3 class="h3 form-title">Contact Form</h3>
+
+            <form
+              action="https://api.web3forms.com/submit"
+              method="POST"
+              class="form"
+              data-form
+            >
+              <input
+                type="hidden"
+                name="access_key"
+                value="f60d2733-e8fc-432d-87c5-0038b8fc16ad"
+              />
+
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="fullname"
+                  class="form-input"
+                  placeholder="Full name"
+                  required
+                  data-form-input
+                />
+
+                <input
+                  type="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Email address"
+                  required
+                  data-form-input
+                />
+              </div>
+
+              <textarea
+                name="message"
+                class="form-input"
+                placeholder="Your Message"
+                required
+                data-form-input
+              ></textarea>
+
+              <button class="form-btn" type="submit" disabled data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script src="./assets/js/experience-calculator.js"></script>
+  </body>
 </html>
