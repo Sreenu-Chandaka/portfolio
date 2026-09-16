@@ -73,8 +73,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function moveIndicator(target){
     if (!navIndicator || !target) return;
+    // target.offsetLeft is already relative to .navbar's padding edge, since
+    // .navbar (position: sticky) is target's offsetParent — do not subtract
+    // navbar's own offsetLeft, which lives in a different coordinate space.
     navIndicator.style.width = target.offsetWidth + 'px';
-    navIndicator.style.transform = `translateX(${target.offsetLeft - target.parentElement.offsetLeft}px)`;
+    navIndicator.style.transform = `translateX(${target.offsetLeft}px)`;
   }
 
   function activatePage(pageName, sourceBtn){
@@ -90,13 +93,13 @@ document.addEventListener('DOMContentLoaded', () => {
     btn.addEventListener('click', () => activatePage(btn.dataset.page, btn));
   });
 
-  // position indicator initially + on resize
+  // Position the indicator initially, after fonts/layout settle, and on resize.
   const initialActive = document.querySelector('.navbar-link.active') || navLinks[0];
-  requestAnimationFrame(() => moveIndicator(initialActive));
-  window.addEventListener('resize', () => {
-    const current = document.querySelector('.navbar-link.active');
-    moveIndicator(current);
-  });
+  const settleIndicator = () => moveIndicator(document.querySelector('.navbar-link.active') || initialActive);
+  requestAnimationFrame(settleIndicator);
+  window.addEventListener('load', settleIndicator);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(settleIndicator);
+  window.addEventListener('resize', settleIndicator);
 
   /* ---------- Reveal on scroll ---------- */
   const revealEls = document.querySelectorAll('[data-reveal]');
