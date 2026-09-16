@@ -12,6 +12,7 @@
   --panel-2: #16223770;
   --line: rgba(233, 238, 245, 0.09);
   --line-strong: rgba(233, 238, 245, 0.16);
+  --grid-line: rgba(233, 238, 245, 0.035);
   --paper: #E9EEF5;
   --muted: #8FA0B8;
   --muted-2: #64768F;
@@ -36,6 +37,7 @@
   --panel-2: #ffffffb0;
   --line: rgba(10, 15, 26, 0.10);
   --line-strong: rgba(10, 15, 26, 0.18);
+  --grid-line: rgba(10, 15, 26, 0.045);
   --paper: #14202F;
   --muted: #5B6B80;
   --muted-2: #7C8AA0;
@@ -58,11 +60,11 @@ body{
   overflow-x: hidden;
   transition: background .45s var(--ease), color .45s var(--ease);
 
-  /* blueprint grid texture */
+  /* blueprint grid texture — kept faint so it reads as paper, not noise */
   background-image:
-    linear-gradient(var(--line) 1px, transparent 1px),
-    linear-gradient(90deg, var(--line) 1px, transparent 1px);
-  background-size: 44px 44px;
+    linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+  background-size: 56px 56px;
   background-attachment: fixed;
 }
 
@@ -251,10 +253,11 @@ a.contact-link:hover{ color: var(--amber); }
 .navbar-link.active{ color: var(--ink); }
 [data-theme="light"] .navbar-link.active{ color: var(--panel); }
 .nav-indicator{
-  position: absolute; top: 18px; left: 40px; height: 34px; border-radius: 999px;
+  position: absolute; top: 18px; left: 0; height: 34px; border-radius: 999px;
   background: var(--amber);
   transition: transform .45s var(--ease), width .45s var(--ease);
   z-index: 0;
+  will-change: transform;
 }
 
 /* ---------- Page viewport ---------- */
