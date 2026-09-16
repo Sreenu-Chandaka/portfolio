@@ -1,531 +1,408 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sreenu - Personal Portfolio</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sreenu Chandaka — Full-Stack Developer</title>
+  <meta name="description" content="Sreenu Chandaka — Full-Stack Software Engineer building scalable web and mobile systems with React, Spring Boot and FastAPI." />
 
-    <link
-      rel="shortcut icon"
-      href="./assets/images/professional_pic.png"
-      type="image/x-icon"
-    />
+  <link rel="shortcut icon" href="./assets/images/professional_pic.png" type="image/x-icon" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
 
-    <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+  <!-- Scroll / load progress -->
+  <div class="progress-bar" id="progressBar"></div>
 
-  <body>
-    <main>
-      <aside class="sidebar" data-sidebar>
-        <div class="sidebar-info">
-          <a
-            href="https://iili.io/2LR2gCG.png"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="Click me!"
-          >
-            <figure class="avatar-box">
-              <img
-                src="./assets/images/professional_pic.png"
-                alt="Sreenu Chandaka"
-                width="80"
-              />
-              <span class="active-status" title="Available for work!"></span>
-            </figure>
-          </a>
-          <div class="info-content">
-            <h1 class="name" title="Sreenu Chandaka">Sreenu Chandaka</h1>
-            <p class="title">Full-Stack Developer</p>
-          </div>
-          <button class="info_more-btn" data-sidebar-btn>
-            <span>Show Contacts</span>
-            <ion-icon name="chevron-down"></ion-icon>
-          </button>
+  <!-- Preloader -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader-inner">
+      <span class="preloader-mark">SC</span>
+      <span class="preloader-line"><span></span></span>
+    </div>
+  </div>
+
+  <!-- Custom cursor -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <main>
+    <!-- ============ SIDEBAR ============ -->
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-top">
+        <div class="avatar-frame">
+          <span class="frame-tick tick-tl"></span>
+          <span class="frame-tick tick-tr"></span>
+          <span class="frame-tick tick-bl"></span>
+          <span class="frame-tick tick-br"></span>
+          <figure class="avatar-box">
+            <img src="./assets/images/professional_pic.png" alt="Sreenu Chandaka" width="88" height="88" />
+          </figure>
+          <span class="status-pill"><span class="status-dot"></span>Open to work</span>
         </div>
 
-        <div class="sidebar-info_more">
-          <div class="separator"></div>
-
-          <ul class="contacts-list">
-            <li class="contact-item">
-              <div class="icon-box">
-                <ion-icon name="mail-outline"></ion-icon>
-              </div>
-
-              <div class="contact-info">
-                <p class="contact-title">Email</p>
-                <a href="mailto:chandakasreenu0@gmail.com" class="contact-link">chandakasreenu0@gmail.com</a>
-              </div>
-            </li>
-
-            <li class="contact-item">
-              <div class="icon-box">
-                <ion-icon name="phone-portrait-outline"></ion-icon>
-              </div>
-
-              <div class="contact-info">
-                <p class="contact-title">Phone</p>
-                <a href="tel:+916301485598" class="contact-link">+91 6301485598</a>
-              </div>
-            </li>
-
-            <li class="contact-item">
-              <div class="icon-box">
-                <ion-icon name="location-outline"></ion-icon>
-              </div>
-
-              <div class="contact-info">
-                <p class="contact-title">Location</p>
-                <address>Vijayawada, Andhra Pradesh, India</address>
-              </div>
-            </li>
-          </ul>
-
-          <div class="separator"></div>
-
-          <ul class="social-list">
-            <li class="social-item">
-              <a
-                href="https://www.linkedin.com/in/sreenuchandaka/"
-                class="social-link"
-              >
-                <ion-icon name="logo-linkedin"></ion-icon>
-              </a>
-            </li>
-
-            <li class="social-item">
-              <a href="https://github.com/Sreenu-Chandaka" class="social-link">
-                <ion-icon name="logo-github"></ion-icon>
-              </a>
-            </li>
-          </ul>
+        <div class="identity">
+          <h1 class="name">Sreenu Chandaka</h1>
+          <p class="title" id="titleText">Full&#8209;Stack Developer</p>
         </div>
-      </aside>
 
-      <div class="main-content">
-        <nav class="navbar">
-          <ul class="navbar-list">
-            <li class="navbar-item">
-              <button class="navbar-link active" data-nav-link>About</button>
-            </li>
+        <div class="meta-row">
+          <span class="meta-chip" id="expChip">3+ yrs experience</span>
+          <span class="meta-chip">Vijayawada, IN</span>
+        </div>
 
-            <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Resume</button>
-            </li>
+        <button class="contacts-toggle" data-sidebar-btn aria-expanded="false">
+          <span>Contact details</span>
+          <svg class="icon chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+      </div>
 
-            <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Portfolio</button>
-            </li>
+      <div class="sidebar-more" data-sidebar-more>
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <span class="icon-box">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z" opacity="0"/><path d="M4 6l8 7 8-7"/><rect x="3" y="5" width="18" height="14" rx="2"/></svg>
+            </span>
+            <span class="contact-info">
+              <span class="contact-label">Email</span>
+              <a href="mailto:chandakasreenu0@gmail.com" class="contact-link">chandakasreenu0@gmail.com</a>
+            </span>
+          </li>
+          <li class="contact-item">
+            <span class="icon-box">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2" width="10" height="20" rx="2"/><line x1="11" y1="18" x2="13" y2="18"/></svg>
+            </span>
+            <span class="contact-info">
+              <span class="contact-label">Phone</span>
+              <a href="tel:+916301485598" class="contact-link">+91 6301485598</a>
+            </span>
+          </li>
+          <li class="contact-item">
+            <span class="icon-box">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-7.2 7-12.5A7 7 0 1 0 5 9.5C5 14.8 12 22 12 22z"/><circle cx="12" cy="9.5" r="2.4"/></svg>
+            </span>
+            <span class="contact-info">
+              <span class="contact-label">Location</span>
+              <span class="contact-link">Vijayawada, Andhra Pradesh</span>
+            </span>
+          </li>
+        </ul>
 
-            <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Blog</button>
-            </li>
+        <ul class="social-list">
+          <li>
+            <a href="https://www.linkedin.com/in/sreenuchandaka/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.6c0-1.34-.02-3.06-1.87-3.06-1.87 0-2.15 1.46-2.15 2.96V21H9z"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/Sreenu-Chandaka" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.93.83.09-.65.35-1.09.64-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.3 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
 
-            <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Contact</button>
-            </li>
-          </ul>
-        </nav>
+    <!-- ============ MAIN CONTENT ============ -->
+    <div class="main-content">
+      <nav class="navbar" data-navbar>
+        <span class="nav-indicator" id="navIndicator"></span>
+        <button class="navbar-link active" data-nav-link data-page="about">About</button>
+        <button class="navbar-link" data-nav-link data-page="resume">Resume</button>
+        <button class="navbar-link" data-nav-link data-page="portfolio">Portfolio</button>
+        <button class="navbar-link" data-nav-link data-page="blog">Blog</button>
+        <button class="navbar-link" data-nav-link data-page="contact">Contact</button>
+      </nav>
 
-        <article class="about active" data-page="about">
-          <header>
-            <h2 class="h2 article-title">About me</h2>
+      <div class="page-viewport">
+
+        <!-- ===== ABOUT ===== -->
+        <article class="page active" data-page="about">
+          <header class="page-head">
+            <p class="page-kicker">01 — About</p>
+            <h2 class="page-title">Building systems that hold up<br/>under real traffic.</h2>
           </header>
 
-          <section class="about-text">
+          <section class="about-text" data-reveal>
             <p>
-              Full-Stack Software Engineer with 3+ years of experience building scalable and high-performance web applications using React.js and Java (Spring Boot). I've worked on end-to-end systems — designing responsive user interfaces, developing robust backend services, and delivering production-ready applications used by 10,000+ users with around 99.5% reliability.
+              Full-stack software engineer with 3+ years of experience building scalable, high-performance web
+              applications with React.js and Java (Spring Boot). I work end to end — designing responsive
+              interfaces, building resilient backend services, and shipping production systems used by
+              10,000+ people with roughly 99.5% reliability.
             </p>
-
             <p>
-              My work focuses on building clean, maintainable systems. I've designed REST APIs, implemented secure authentication using JWT and role-based access control, and built real-time features using WebSockets for low-latency applications. I also bring experience with microservices, cloud deployments on AWS, and containerization with Docker.
-
-              <ul>
-                <li>• Frontend: React.js — responsive UIs, component architecture, performance optimization</li>
-                <li>• Backend: Java (Spring Boot), FastAPI, Node.js, Express.js, RESTful APIs, Microservices, RBAC</li>
-                <li>• Real-time Systems: WebSockets, Socket.IO for live features and low-latency communication</li>
-                <li>• Databases: PostgreSQL, MySQL — schema design, query optimization, third-party API integration</li>
-                <li>• Cloud & DevOps: AWS, Docker, CI/CD (GitHub Actions), Fastlane, App Store/Play Store deployment</li>
-                <li>• Mobile: Flutter (cross-platform), Swift/SwiftUI (iOS), Kotlin/Jetpack Compose (Android)</li>
-              </ul>
-            </p>
-
-            <p>
-              Particularly interested in product-based environments where performance, system design, and user experience truly matter. Check out my portfolio or let's connect to discuss your project!
+              My focus is clean, maintainable architecture: REST APIs, JWT authentication and role-based
+              access control, and real-time features over WebSockets for low-latency products. I also work
+              with microservices, AWS deployments, and Docker containers day to day.
             </p>
           </section>
 
-          <section class="service">
-            <h3 class="h3 service-title">What i'm doing</h3>
+          <section class="stat-strip" data-reveal>
+            <div class="stat">
+              <span class="stat-num" data-count="3" data-suffix="+">0</span>
+              <span class="stat-label">years of experience</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num" data-count="10000" data-suffix="+">0</span>
+              <span class="stat-label">users served in production</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num" data-count="99.5" data-suffix="%" data-decimals="1">0</span>
+              <span class="stat-label">uptime &amp; reliability</span>
+            </div>
+          </section>
 
+          <section class="stack" data-reveal>
+            <h3 class="h3">Working stack</h3>
+            <div class="stack-grid">
+              <div class="stack-col">
+                <span class="stack-col-label">Frontend</span>
+                <p>React.js — responsive UIs, component architecture, performance tuning</p>
+              </div>
+              <div class="stack-col">
+                <span class="stack-col-label">Backend</span>
+                <p>Java (Spring Boot), FastAPI, Node.js / Express, REST APIs, microservices, RBAC</p>
+              </div>
+              <div class="stack-col">
+                <span class="stack-col-label">Real-time</span>
+                <p>WebSockets and Socket.IO for live features and low-latency communication</p>
+              </div>
+              <div class="stack-col">
+                <span class="stack-col-label">Data</span>
+                <p>PostgreSQL, MySQL — schema design, query tuning, third-party API integration</p>
+              </div>
+              <div class="stack-col">
+                <span class="stack-col-label">Cloud &amp; DevOps</span>
+                <p>AWS, Docker, GitHub Actions CI/CD, Fastlane, App Store / Play Store releases</p>
+              </div>
+              <div class="stack-col">
+                <span class="stack-col-label">Mobile</span>
+                <p>Flutter, Swift / SwiftUI, Kotlin / Jetpack Compose</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="service" data-reveal>
+            <h3 class="h3">What I do</h3>
             <ul class="service-list">
               <li class="service-item">
                 <div class="service-icon-box">
-                  <img
-                    src="./assets/images/icon-dev.svg"
-                    alt="Fullstack development icon"
-                    width="40"
-                  />
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="8 6 2 12 8 18"/><polyline points="16 6 22 12 16 18"/></svg>
                 </div>
-
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Fullstack Development</h4>
-
-                  <p class="service-item-text">
-                    Building end-to-end scalable applications with React.js frontends and robust Spring Boot / FastAPI backend architectures.
-                  </p>
+                <div class="service-content">
+                  <h4 class="h4">Full-stack development</h4>
+                  <p>End-to-end applications with React.js frontends and Spring Boot / FastAPI backends built to scale.</p>
                 </div>
               </li>
-
               <li class="service-item">
                 <div class="service-icon-box">
-                  <img
-                    src="./assets/images/icon-app.svg"
-                    alt="mobile app icon"
-                    width="40"
-                  />
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2"/><line x1="10" y1="19" x2="14" y2="19"/></svg>
                 </div>
-
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Cross-Platform Apps</h4>
-
-                  <p class="service-item-text">
-                    Professional development of applications for Android, iOS, Web, Desktop, and Android TV using Flutter.
-                  </p>
+                <div class="service-content">
+                  <h4 class="h4">Cross-platform apps</h4>
+                  <p>Shipping Flutter apps to Android, iOS, web, desktop and Android TV from one codebase.</p>
                 </div>
               </li>
-
               <li class="service-item">
                 <div class="service-icon-box">
-                  <img
-                    src="./assets/images/icon-design.svg"
-                    alt="design icon"
-                    width="40"
-                  />
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.66 3.58 3 8 3s8-1.34 8-3V5"/><path d="M4 11v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6"/></svg>
                 </div>
-
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Backend & API Development</h4>
-
-                  <p class="service-item-text">
-                    Creating RESTful APIs, microservices, and real-time systems with Spring Boot, FastAPI, and Node.js, deployed on AWS with Docker.
-                  </p>
+                <div class="service-content">
+                  <h4 class="h4">Backend &amp; APIs</h4>
+                  <p>REST APIs, microservices and real-time systems with Spring Boot, FastAPI and Node.js on AWS.</p>
                 </div>
               </li>
             </ul>
           </section>
 
-          <div class="modal-container" data-modal-container>
-            <div class="overlay" data-overlay></div>
-
-            <section class="testimonials-modal">
-              <button class="modal-close-btn" data-modal-close-btn>
-                <ion-icon name="close-outline"></ion-icon>
-              </button>
-
-              <div class="modal-img-wrapper">
-                <figure class="modal-avatar-box">
-                  <img
-                    src="./assets/images/avatar-1.png"
-                    alt="Daniel lewis"
-                    width="80"
-                    data-modal-img
-                  />
-                </figure>
-
-                <img src="./assets/images/icon-quote.svg" alt="quote icon" />
-              </div>
-
-              <div class="modal-content">
-                <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-                <time datetime="2021-06-14">14 June, 2021</time>
-
-                <div data-modal-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were
-                    very pleased with the work done. She has a lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum
-                    dolor sit amet, ullamcous cididt consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels
-                    dolore magnarels alia.
-                  </p>
-                </div>
-              </div>
-            </section>
-          </div>
-
-          <section class="clients">
-            <h3 class="h3 clients-title">Skills</h3>
-
-            <ul class="clients-list has-scrollbar">
-              <li class="clients-item">
-                <a href="https://react.dev/" target="_blank">
-                  <img src="./assets/skills/React.svg" alt="React.js" />
-                </a>
-              </li>
-
-              <li class="clients-item">
-                <a href="https://spring.io/projects/spring-boot" target="_blank">
-                  <img src="./assets/skills/Spring.svg" alt="Spring Boot" />
-                </a>
-              </li>
-
-              <li class="clients-item">
-                <a href="https://fastapi.tiangolo.com/" target="_blank">
-                  <img src="./assets/skills/FastAPI.svg" alt="FastAPI" />
-                </a>
-              </li>
-
-              <li class="clients-item">
-                <a href="https://flutter.dev/" target="_blank">
-                  <img src="./assets/skills/Flutter.svg" alt="Flutter" />
-                </a>
-              </li>
-
-              <li class="clients-item">
-                <a href="https://www.docker.com/" target="_blank">
-                  <img src="./assets/skills/Docker.svg" alt="Docker" />
-                </a>
-              </li>
-
-              <li class="clients-item">
-                <a href="https://aws.amazon.com/" target="_blank">
-                  <img src="./assets/skills/AWS.svg" alt="AWS" />
-                </a>
-              </li>
-
-              <li class="clients-item">
-                <a href="https://www.postgresql.org/" target="_blank">
-                  <img src="./assets/skills/PostgreSQL.svg" alt="PostgreSQL" />
-                </a>
-              </li>
-
-              <li class="clients-item">
-                <a href="https://firebase.google.com/" target="_blank">
-                  <img src="./assets/skills/Firebase.svg" alt="Firebase" />
-                </a>
-              </li>
-
-              <li class="clients-item">
-                <a href="https://www.figma.com/" target="_blank">
-                  <img src="./assets/skills/Figma.svg" alt="Figma" />
-                </a>
-              </li>
-            </ul>
+          <section class="marquee-wrap" data-reveal aria-label="Tools and platforms">
+            <div class="marquee">
+              <ul class="marquee-track">
+                <li><img src="./assets/skills/React.svg" alt="React" /></li>
+                <li><img src="./assets/skills/Spring.svg" alt="Spring Boot" /></li>
+                <li><img src="./assets/skills/FastAPI.svg" alt="FastAPI" /></li>
+                <li><img src="./assets/skills/Flutter.svg" alt="Flutter" /></li>
+                <li><img src="./assets/skills/Docker.svg" alt="Docker" /></li>
+                <li><img src="./assets/skills/AWS.svg" alt="AWS" /></li>
+                <li><img src="./assets/skills/PostgreSQL.svg" alt="PostgreSQL" /></li>
+                <li><img src="./assets/skills/Firebase.svg" alt="Firebase" /></li>
+                <li><img src="./assets/skills/Figma.svg" alt="Figma" /></li>
+              </ul>
+              <ul class="marquee-track" aria-hidden="true">
+                <li><img src="./assets/skills/React.svg" alt="" /></li>
+                <li><img src="./assets/skills/Spring.svg" alt="" /></li>
+                <li><img src="./assets/skills/FastAPI.svg" alt="" /></li>
+                <li><img src="./assets/skills/Flutter.svg" alt="" /></li>
+                <li><img src="./assets/skills/Docker.svg" alt="" /></li>
+                <li><img src="./assets/skills/AWS.svg" alt="" /></li>
+                <li><img src="./assets/skills/PostgreSQL.svg" alt="" /></li>
+                <li><img src="./assets/skills/Firebase.svg" alt="" /></li>
+                <li><img src="./assets/skills/Figma.svg" alt="" /></li>
+              </ul>
+            </div>
           </section>
         </article>
 
-        <article class="resume" data-page="resume">
-          <header>
-            <h2 class="h2 article-title">Resume</h2>
+        <!-- ===== RESUME ===== -->
+        <article class="page" data-page="resume">
+          <header class="page-head">
+            <p class="page-kicker">02 — Resume</p>
+            <h2 class="page-title">Where I've worked<br/>and what I studied.</h2>
           </header>
 
-          <section class="timeline">
-            <div class="title-wrapper">
-              <div class="icon-box">
-                <ion-icon name="book-outline"></ion-icon>
-              </div>
-              <h3 class="h3">Education</h3>
-            </div>
-
-            <ol class="timeline-list">
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">
-                  Rajiv Gandhi University of Knowledge Technologies
-                </h4>
-                <p class="timeline-text">
-                  Bachelor of Technology in Electronics and Communication Engineering
-                </p>
-                <span>Srikakulam, India &bull; 2017 &mdash; August 2023</span>
-                <p class="timeline-text">CGPA: 8.7 / 10</p>
-                <p class="timeline-text">Relevant Coursework: Software Architecture, DBMS, Enterprise Computing, Mobile Computing, Database Systems, IoT</p>
-              </li>
-            </ol>
-          </section>
-
-          <section class="timeline">
-            <div class="title-wrapper">
-              <div class="icon-box">
-                <ion-icon name="book-outline"></ion-icon>
-              </div>
+          <section class="timeline-section" data-reveal>
+            <div class="timeline-head">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
               <h3 class="h3">Experience</h3>
             </div>
 
-            <ol class="timeline-list">
+            <ol class="timeline">
               <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">FUGEN Webtech Pvt Ltd</h4>
-                <p class="timeline-text">Full-Stack Software Engineer (Spring Boot, FastAPI, React.js)</p>
-                <span>Vijayawada, Andhra Pradesh, India &bull; June 2025 &mdash; Present</span>
-                <ul class="timeline-text">
-                  <li>&#8226; Developing and maintaining scalable full-stack applications using Java (Spring Boot) and React.js</li>
-                  <li>&#8226; Built the CivilBook platform, enhancing interaction between service providers and customers</li>
-                  <li>&#8226; Implementing real-time features and integrating payment gateways for secure operations</li>
-                  <li>&#8226; Mentoring junior developers and enforcing best coding practices to uphold quality standards</li>
+                <span class="timeline-date">Jun 2025 — Present</span>
+                <h4 class="timeline-role">Full-Stack Software Engineer <span class="dash">—</span> FUGEN Webtech Pvt Ltd</h4>
+                <p class="timeline-loc">Vijayawada, Andhra Pradesh, India</p>
+                <ul class="timeline-points">
+                  <li>Develop and maintain scalable full-stack applications with Java (Spring Boot) and React.js</li>
+                  <li>Built the CivilBook platform, connecting service providers with customers</li>
+                  <li>Implement real-time features and integrate payment gateways for secure operations</li>
+                  <li>Mentor junior developers and set coding standards across the team</li>
                 </ul>
               </li>
 
               <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">Suki Software Solutions Pvt Ltd</h4>
-                <p class="timeline-text">Software Engineer &mdash; Full Stack (React.js, Spring Boot)</p>
-                <span>Chennai, India &bull; Aug 2024 &mdash; May 2025</span>
-                <ul class="timeline-text">
-                  <li>&#8226; Developed secure and scalable backend services using Java (Spring Boot) and REST APIs for enterprise-grade applications</li>
-                  <li>&#8226; Built responsive user interfaces with React.js, enhancing usability and application performance</li>
-                  <li>&#8226; Implemented push notification systems, improving user engagement across platforms</li>
-                  <li>&#8226; Integrated PostgreSQL/MySQL databases and third-party APIs for seamless data flow</li>
+                <span class="timeline-date">Aug 2024 — May 2025</span>
+                <h4 class="timeline-role">Software Engineer, Full Stack <span class="dash">—</span> Suki Software Solutions Pvt Ltd</h4>
+                <p class="timeline-loc">Chennai, India</p>
+                <ul class="timeline-points">
+                  <li>Built secure, scalable backend services in Java (Spring Boot) for enterprise-grade apps</li>
+                  <li>Built responsive interfaces in React.js, improving usability and performance</li>
+                  <li>Implemented push notification systems that lifted user engagement</li>
+                  <li>Integrated PostgreSQL / MySQL and third-party APIs for seamless data flow</li>
                 </ul>
               </li>
 
               <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">Noki Technologies Private Limited</h4>
-                <p class="timeline-text">Software Engineer (Full Stack &mdash; React.js, Spring Boot, Real-Time Systems)</p>
-                <span>Hyderabad, India &bull; Aug 2023 &mdash; Jul 2024 &bull; 1 year</span>
-                <ul class="timeline-text">
-                  <li>&#8226; Developed real-time, scalable full-stack applications utilizing Flutter, enhancing user engagement and performance</li>
-                  <li>&#8226; Led end-to-end web application development with React.js and Spring Boot, ensuring seamless production deployment</li>
-                  <li>&#8226; Integrated Google Maps APIs for real-time tracking, significantly improving location-based services</li>
+                <span class="timeline-date">Aug 2023 — Jul 2024</span>
+                <h4 class="timeline-role">Software Engineer, Full Stack <span class="dash">—</span> Noki Technologies Pvt Ltd</h4>
+                <p class="timeline-loc">Hyderabad, India · 1 year</p>
+                <ul class="timeline-points">
+                  <li>Built real-time, scalable full-stack apps in Flutter, improving engagement and performance</li>
+                  <li>Led end-to-end web development in React.js and Spring Boot through production release</li>
+                  <li>Integrated Google Maps APIs for real-time tracking on location-based services</li>
                 </ul>
               </li>
 
               <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">Orotron</h4>
-                <p class="timeline-text">Software Engineer Intern</p>
-                <span>Hyderabad, India &bull; Feb 2023 &mdash; Jul 2023 &bull; 6 months</span>
-                <ul class="timeline-text">
-                  <li>&#8226; Developed a real-time image gallery system using React.js and Spring Boot, enabling instant uploads and seamless multi-device access through WebSocket-based updates</li>
-                  <li>&#8226; Designed and implemented a commenting system with threaded replies, live updates, and notification support to enhance user interaction and retention</li>
-                  <li>&#8226; Engineered cloud-based data synchronization with automatic backup and cross-device accessibility using backend APIs and storage services</li>
+                <span class="timeline-date">Feb 2023 — Jul 2023</span>
+                <h4 class="timeline-role">Software Engineer Intern <span class="dash">—</span> Orotron</h4>
+                <p class="timeline-loc">Hyderabad, India · 6 months</p>
+                <ul class="timeline-points">
+                  <li>Built a real-time image gallery in React.js and Spring Boot with instant, multi-device WebSocket updates</li>
+                  <li>Implemented threaded comments with live updates and notifications</li>
+                  <li>Engineered cloud data sync with automatic backup and cross-device access</li>
                 </ul>
               </li>
             </ol>
           </section>
+
+          <section class="timeline-section" data-reveal>
+            <div class="timeline-head">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+              <h3 class="h3">Education</h3>
+            </div>
+            <ol class="timeline">
+              <li class="timeline-item">
+                <span class="timeline-date">2017 — Aug 2023</span>
+                <h4 class="timeline-role">B.Tech, Electronics &amp; Communication Engineering</h4>
+                <p class="timeline-loc">Rajiv Gandhi University of Knowledge Technologies, Srikakulam · CGPA 8.7 / 10</p>
+                <p class="timeline-points" style="padding-left:0;list-style:none;">Coursework: Software Architecture, DBMS, Enterprise Computing, Mobile Computing, Database Systems, IoT</p>
+              </li>
+            </ol>
+          </section>
+
+          <a class="btn-resume-download" href="mailto:chandakasreenu0@gmail.com?subject=Resume%20request" data-reveal>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><polyline points="7 10 12 15 17 10"/><path d="M5 20h14"/></svg>
+            Request full resume (PDF)
+          </a>
         </article>
 
-        <article class="portfolio" data-page="portfolio">
-          <header>
-            <h2 class="h2 article-title">Portfolio</h2>
+        <!-- ===== PORTFOLIO ===== -->
+        <article class="page" data-page="portfolio">
+          <header class="page-head">
+            <p class="page-kicker">03 — Portfolio</p>
+            <h2 class="page-title">Shipped products,<br/>live in the world.</h2>
           </header>
 
-          <section class="projects">
-            <ul class="filter-list">
-              <li class="filter-item">
-                <button class="active" data-filter-btn>All</button>
-              </li>
-              <li class="filter-item">
-                <button data-filter-btn>Mobile Applications</button>
-              </li>
-              <li class="filter-item">
-                <button data-filter-btn>Web Applications</button>
-              </li>
-            </ul>
-
-            <div class="filter-select-box">
-              <button class="filter-select" data-select>
-                <div class="select-value" data-selecct-value>
-                  Select category
-                </div>
-                <div class="select-icon">
-                  <ion-icon name="chevron-down"></ion-icon>
-                </div>
-              </button>
-
-              <ul class="select-list">
-                <li class="select-item">
-                  <button data-select-item>All</button>
-                </li>
-                <li class="select-item">
-                  <button data-select-item>Mobile Applications</button>
-                </li>
-                <li class="select-item">
-                  <button data-select-item>Web Applications</button>
-                </li>
-              </ul>
+          <section class="projects" data-reveal>
+            <div class="filter-list" role="tablist">
+              <button class="filter-btn active" data-filter-btn data-filter="all">All</button>
+              <button class="filter-btn" data-filter-btn data-filter="mobile">Mobile</button>
+              <button class="filter-btn" data-filter-btn data-filter="web">Web</button>
             </div>
 
             <ul class="project-list">
-              <li class="project-item active" data-filter-item data-category="mobile applications">
-                <a href="https://play.google.com/store/apps/details?id=com.civilbook.civilbookprovider" target="_blank">
+              <li class="project-item" data-filter-item data-category="mobile">
+                <a href="https://play.google.com/store/apps/details?id=com.civilbook.civilbookprovider" target="_blank" rel="noopener noreferrer">
                   <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
                     <img src="./assets/projects/civilbookprovider.webp" alt="CivilBook Provider" loading="lazy" />
+                    <span class="project-hover"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></span>
                   </figure>
-                  <h3 class="project-title">CivilBook - Service Platform</h3>
+                  <h3 class="project-title">CivilBook — Service Platform</h3>
                   <p class="project-category">Mobile Application</p>
                 </a>
               </li>
-
-              <li class="project-item active" data-filter-item data-category="mobile applications">
-                <a href="https://apps.apple.com/in/app/anna-kirana/id1661523940" target="_blank">
+              <li class="project-item" data-filter-item data-category="mobile">
+                <a href="https://apps.apple.com/in/app/anna-kirana/id1661523940" target="_blank" rel="noopener noreferrer">
                   <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
                     <img src="./assets/projects/anna_kirana.webp" alt="Anna Kirana" loading="lazy" />
+                    <span class="project-hover"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></span>
                   </figure>
                   <h3 class="project-title">Anna Kirana</h3>
                   <p class="project-category">Mobile Application</p>
                 </a>
               </li>
-
-              <li class="project-item active" data-filter-item data-category="mobile applications">
-                <a href="https://play.google.com/store/apps/details?id=com.suki.erpmobileapp&hl=en_IN" target="_blank">
+              <li class="project-item" data-filter-item data-category="mobile">
+                <a href="https://play.google.com/store/apps/details?id=com.suki.erpmobileapp&hl=en_IN" target="_blank" rel="noopener noreferrer">
                   <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-                    <img src="./assets/projects/suki_erp.webp" alt="suki erp" loading="lazy" />
+                    <img src="./assets/projects/suki_erp.webp" alt="Suki ERP" loading="lazy" />
+                    <span class="project-hover"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></span>
                   </figure>
-                  <h3 class="project-title">SUKI ERP</h3>
+                  <h3 class="project-title">Suki ERP</h3>
                   <p class="project-category">Mobile Application</p>
                 </a>
               </li>
-
-              <li class="project-item active" data-filter-item data-category="mobile applications">
-                <a href="https://play.google.com/store/apps/details?id=com.farm.growtogetherfarmily" target="_blank">
+              <li class="project-item" data-filter-item data-category="mobile">
+                <a href="https://play.google.com/store/apps/details?id=com.farm.growtogetherfarmily" target="_blank" rel="noopener noreferrer">
                   <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
                     <img src="./assets/projects/growtogetherfarmily.webp" alt="Grow Together / Farmily" loading="lazy" />
+                    <span class="project-hover"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></span>
                   </figure>
                   <h3 class="project-title">Grow Together / Farmily</h3>
                   <p class="project-category">Mobile Application</p>
                 </a>
               </li>
-
-              <li class="project-item active" data-filter-item data-category="mobile applications">
-                <a href="https://play.google.com/store/apps/details?id=com.ass.akhandasevasamasthan" target="_blank">
+              <li class="project-item" data-filter-item data-category="mobile">
+                <a href="https://play.google.com/store/apps/details?id=com.ass.akhandasevasamasthan" target="_blank" rel="noopener noreferrer">
                   <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
                     <img src="./assets/projects/akhandaseva.webp" alt="Akhanda Seva Samsthan" loading="lazy" />
+                    <span class="project-hover"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></span>
                   </figure>
                   <h3 class="project-title">Akhanda Seva Samsthan</h3>
                   <p class="project-category">Mobile Application</p>
                 </a>
               </li>
-
-              <li class="project-item active" data-filter-item data-category="web applications">
-                <a href="https://sreepixelss.web.app/" target="_blank">
+              <li class="project-item" data-filter-item data-category="web">
+                <a href="https://sreepixelss.web.app/" target="_blank" rel="noopener noreferrer">
                   <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
                     <img src="./assets/projects/sreepixelss.png" alt="SreePixels" loading="lazy" />
+                    <span class="project-hover"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></span>
                   </figure>
-                  <h3 class="project-title">SreePixels - HD Images Website</h3>
+                  <h3 class="project-title">SreePixels — HD Images Website</h3>
                   <p class="project-category">Web Application</p>
                 </a>
               </li>
@@ -533,123 +410,42 @@
           </section>
         </article>
 
-        <article class="blog" data-page="blog">
-          <header>
-            <h2 class="h2 article-title">Blog</h2>
+        <!-- ===== BLOG ===== -->
+        <article class="page" data-page="blog">
+          <header class="page-head">
+            <p class="page-kicker">04 — Blog</p>
+            <h2 class="page-title">Notes from<br/>the field.</h2>
           </header>
 
-          <section class="blog-posts">
-            <ul class="blog-posts-list">
-              <li class="blog-post-item">
-                <a
-                  href="https://medium.com/@chandakasreenu0/bridging-worlds-flutter-kotlin-and-swift-a-unified-path-for-modern-app-developers-658831906335"
-                  target="_blank"
-                >
-                  <figure class="blog-banner-box">
-                    <img
-                      src="./assets/blogs/flutter.png"
-                      alt="Bridging Worlds: Flutter, Kotlin, and Swift — A Unified Path for Modern App Developers"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <div class="blog-content">
-                    <div class="blog-meta">
-                      <p class="blog-category">Blog</p>
-                      <span class="dot"></span>
-                      <time datetime="2025-11-01">Nov 01, 2025</time>
-                    </div>
-
-                    <h3 class="h3 blog-item-title">
-                      Bridging Worlds: Flutter, Kotlin, and Swift — A Unified Path for Modern App Developers
-                    </h3>
-
-                    <p
-                      class="blog-text"
-                      style="
-                        overflow: hidden;
-                        display: -webkit-box;
-                        -webkit-box-orient: vertical;
-                      "
-                    >
-                      As mobile ecosystems mature, developers often find themselves navigating between native and cross-platform solutions. This article explores how Flutter, Kotlin, and Swift can coexist in a unified development strategy—bridging performance, design, and code reusability for the next generation of app developers.
-                    </p>
+          <section class="blog-posts" data-reveal>
+            <ul class="blog-list">
+              <li class="blog-item">
+                <a href="https://medium.com/@chandakasreenu0/bridging-worlds-flutter-kotlin-and-swift-a-unified-path-for-modern-app-developers-658831906335" target="_blank" rel="noopener noreferrer">
+                  <figure class="blog-banner"><img src="./assets/blogs/flutter.png" alt="" loading="lazy" /></figure>
+                  <div class="blog-body">
+                    <time datetime="2025-11-01">Nov 01, 2025</time>
+                    <h3 class="h4">Bridging Worlds: Flutter, Kotlin, and Swift</h3>
+                    <p>How Flutter, Kotlin and Swift can coexist in one strategy — bridging performance, design and code reuse.</p>
                   </div>
                 </a>
               </li>
-
-              <li class="blog-post-item">
-                <a
-                  href="https://medium.com/@chandakasreenu0/the-getx-paradox-inside-flutters-most-controversial-state-management-package-5cbd9e6a9b59"
-                  target="_blank"
-                >
-                  <figure class="blog-banner-box">
-                    <img
-                      src="./assets/blogs/flutter_getx.png"
-                      alt="The GetX Paradox: Inside Flutter's Most Controversial State Management Package"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <div class="blog-content">
-                    <div class="blog-meta">
-                      <p class="blog-category">Blog</p>
-                      <span class="dot"></span>
-                      <time datetime="2024-11-28">Nov 28, 2024</time>
-                    </div>
-
-                    <h3 class="h3 blog-item-title">
-                      The GetX Paradox: Inside Flutter's Most Controversial State Management Package
-                    </h3>
-
-                    <p
-                      class="blog-text"
-                      style="
-                        overflow: hidden;
-                        display: -webkit-box;
-                        -webkit-box-orient: vertical;
-                      "
-                    >
-                      In the ever-evolving world of Flutter development, few packages have sparked as much passionate debate as GetX. Loved by some, criticized by others, GetX represents a fascinating case study in developer tooling that challenges our conventional understanding of what makes a great state management solution.
-                    </p>
+              <li class="blog-item">
+                <a href="https://medium.com/@chandakasreenu0/the-getx-paradox-inside-flutters-most-controversial-state-management-package-5cbd9e6a9b59" target="_blank" rel="noopener noreferrer">
+                  <figure class="blog-banner"><img src="./assets/blogs/flutter_getx.png" alt="" loading="lazy" /></figure>
+                  <div class="blog-body">
+                    <time datetime="2024-11-28">Nov 28, 2024</time>
+                    <h3 class="h4">The GetX Paradox</h3>
+                    <p>A look inside Flutter's most debated state-management package, and what it gets right and wrong.</p>
                   </div>
                 </a>
               </li>
-
-              <li class="blog-post-item">
-                <a
-                  href="https://medium.com/@chandakasreenu0/flutter-web-when-to-use-it-and-when-to-avoid-it-25cf52f447d6"
-                  target="_blank"
-                >
-                  <figure class="blog-banner-box">
-                    <img
-                      src="./assets/blogs/flutter_web.png"
-                      alt="Flutter Web: When to Use It and When to Avoid It"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <div class="blog-content">
-                    <div class="blog-meta">
-                      <p class="blog-category">Blog</p>
-                      <span class="dot"></span>
-                      <time datetime="2025-02-01">Feb 01, 2025</time>
-                    </div>
-
-                    <h3 class="h3 blog-item-title">
-                      Flutter Web: When to Use It and When to Avoid It
-                    </h3>
-
-                    <p
-                      class="blog-text"
-                      style="
-                        overflow: hidden;
-                        display: -webkit-box;
-                        -webkit-box-orient: vertical;
-                      "
-                    >
-                      Flutter has revolutionized cross-platform app development, enabling developers to build beautiful, natively compiled applications for mobile and desktop from a single codebase. With Flutter Web, Google extended this vision to the browser. However, while Flutter Web is a powerful tool, it's not a silver bullet for every web project. In this article, we'll explore why Flutter Web isn't always the best choice, why it often underperforms compared to JavaScript frameworks, and when it's worth using (or avoiding).
-                    </p>
+              <li class="blog-item">
+                <a href="https://medium.com/@chandakasreenu0/flutter-web-when-to-use-it-and-when-to-avoid-it-25cf52f447d6" target="_blank" rel="noopener noreferrer">
+                  <figure class="blog-banner"><img src="./assets/blogs/flutter_web.png" alt="" loading="lazy" /></figure>
+                  <div class="blog-body">
+                    <time datetime="2025-02-01">Feb 01, 2025</time>
+                    <h3 class="h4">Flutter Web: When to Use It, When to Avoid It</h3>
+                    <p>Why Flutter Web isn't a silver bullet, where it underperforms JS frameworks, and where it shines.</p>
                   </div>
                 </a>
               </li>
@@ -657,91 +453,66 @@
           </section>
         </article>
 
-        <article class="contact" data-page="contact">
-          <header>
-            <h2 class="h2 article-title">Contact</h2>
+        <!-- ===== CONTACT ===== -->
+        <article class="page" data-page="contact">
+          <header class="page-head">
+            <p class="page-kicker">05 — Contact</p>
+            <h2 class="page-title">Let's build<br/>something reliable.</h2>
           </header>
 
-          <section class="mapbox" data-mapbox>
+          <section class="contact-form" data-reveal>
+            <form action="https://api.web3forms.com/submit" method="POST" class="form" data-form>
+              <input type="hidden" name="access_key" value="f60d2733-e8fc-432d-87c5-0038b8fc16ad" />
+
+              <div class="field">
+                <input type="text" name="fullname" id="fullname" class="form-input" placeholder=" " required data-form-input />
+                <label for="fullname">Full name</label>
+              </div>
+
+              <div class="field">
+                <input type="email" name="email" id="email" class="form-input" placeholder=" " required data-form-input />
+                <label for="email">Email address</label>
+              </div>
+
+              <div class="field">
+                <textarea name="message" id="message" class="form-input" placeholder=" " required data-form-input></textarea>
+                <label for="message">Your message</label>
+              </div>
+
+              <button class="form-btn" type="submit" disabled data-form-btn>
+                <span class="form-btn-label">Send message</span>
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              </button>
+
+              <p class="form-status" data-form-status role="status" aria-live="polite"></p>
+            </form>
+          </section>
+
+          <section class="mapbox" data-reveal>
             <figure>
               <iframe
-                width="100%"
-                height="600"
-                src="https://www.google.com/maps?width=100%25&height=600&hl=en&q=Kanuru,+Vijayawada,+Andhra+Pradesh+520007,+India+(My+Business+Name)&t=&z=15&ie=UTF8&iwloc=B&output=embed"
-                frameborder="0"
-                allowfullscreen=""
+                width="100%" height="360"
+                src="https://www.google.com/maps?width=100%25&height=600&hl=en&q=Kanuru,+Vijayawada,+Andhra+Pradesh+520007,+India&t=&z=14&ie=UTF8&iwloc=B&output=embed"
+                title="Map showing Vijayawada, Andhra Pradesh"
+                loading="lazy"
               ></iframe>
             </figure>
           </section>
-
-          <section class="contact-form">
-            <h3 class="h3 form-title">Contact Form</h3>
-
-            <form
-              action="https://api.web3forms.com/submit"
-              method="POST"
-              class="form"
-              data-form
-            >
-              <input
-                type="hidden"
-                name="access_key"
-                value="f60d2733-e8fc-432d-87c5-0038b8fc16ad"
-              />
-
-              <div class="input-wrapper">
-                <input
-                  type="text"
-                  name="fullname"
-                  class="form-input"
-                  placeholder="Full name"
-                  required
-                  data-form-input
-                />
-
-                <input
-                  type="email"
-                  name="email"
-                  class="form-input"
-                  placeholder="Email address"
-                  required
-                  data-form-input
-                />
-              </div>
-
-              <textarea
-                name="message"
-                class="form-input"
-                placeholder="Your Message"
-                required
-                data-form-input
-              ></textarea>
-
-              <button class="form-btn" type="submit" disabled data-form-btn>
-                <ion-icon name="paper-plane"></ion-icon>
-                <span>Send Message</span>
-              </button>
-            </form>
-          </section>
         </article>
+
       </div>
-    </main>
+    </div>
+  </main>
 
-    <script
-      data-cfasync="false"
-      src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
-    ></script>
-    <script src="./assets/js/script.js"></script>
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle color theme">
+    <svg class="icon icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.2M12 19.8V22M4.2 4.2l1.6 1.6M18.2 18.2l1.6 1.6M2 12h2.2M19.8 12H22M4.2 19.8l1.6-1.6M18.2 5.8l1.6-1.6"/></svg>
+    <svg class="icon icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z"/></svg>
+  </button>
 
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
+  <button class="to-top" id="toTop" aria-label="Back to top">
+    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+  </button>
 
-    <script src="./assets/js/experience-calculator.js"></script>
-  </body>
+  <script src="./assets/js/script.js"></script>
+</body>
 </html>
