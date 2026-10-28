@@ -10,11 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ---------- Preloader ---------- */
   const preloader = document.getElementById('preloader');
-  window.addEventListener('load', () => {
-    setTimeout(() => preloader && preloader.classList.add('is-hidden'), 350);
-  });
-  // Fallback in case 'load' already fired or is slow to fire
-  setTimeout(() => preloader && preloader.classList.add('is-hidden'), 2500);
+  // Show content as soon as the DOM is ready — don't wait for every image.
+  setTimeout(() => preloader && preloader.classList.add('is-hidden'), 150);
 
   /* ---------- Scroll progress bar ---------- */
   const progressBar = document.getElementById('progressBar');
@@ -38,6 +35,10 @@ document.addEventListener('DOMContentLoaded', () => {
   if (hasFinePointer && cursorDot && cursorRing) {
     let mouseX = 0, mouseY = 0, ringX = 0, ringY = 0;
     window.addEventListener('mousemove', (e) => {
+      if (!document.body.classList.contains('has-cursor')) {
+        document.body.classList.add('has-cursor');
+        ringX = e.clientX; ringY = e.clientY;
+      }
       mouseX = e.clientX; mouseY = e.clientY;
       cursorDot.style.transform = `translate(${mouseX}px, ${mouseY}px) translate(-50%, -50%)`;
     });
@@ -89,9 +90,21 @@ document.addEventListener('DOMContentLoaded', () => {
     revealVisible();
   }
 
+  // Deep links: #resume, #portfolio … work, and the back button follows tabs.
+  const pageNames = Array.from(navLinks).map((b) => b.dataset.page);
+  function goTo(pageName, push){
+    if (!pageNames.includes(pageName)) pageName = 'about';
+    const btn = Array.from(navLinks).find((b) => b.dataset.page === pageName);
+    activatePage(pageName, btn);
+    if (push) history.pushState(null, '', pageName === 'about' ? location.pathname : '#' + pageName);
+  }
   navLinks.forEach((btn) => {
-    btn.addEventListener('click', () => activatePage(btn.dataset.page, btn));
+    btn.addEventListener('click', () => goTo(btn.dataset.page, true));
   });
+  document.querySelectorAll('[data-goto]').forEach((el) => {
+    el.addEventListener('click', () => goTo(el.dataset.goto, true));
+  });
+  window.addEventListener('popstate', () => goTo(location.hash.slice(1) || 'about', false));
 
   // Position the indicator initially, after fonts/layout settle, and on resize.
   const initialActive = document.querySelector('.navbar-link.active') || navLinks[0];
@@ -130,18 +143,21 @@ document.addEventListener('DOMContentLoaded', () => {
     const decimals = parseInt(el.dataset.decimals || '0', 10);
     const suffix = el.dataset.suffix || '';
     const duration = 1200;
+    const fmt = (v) => el.dataset.format === 'group'
+      ? Math.round(v).toLocaleString('en-US')
+      : v.toFixed(decimals);
     const start = performance.now();
 
     function tick(now){
       const progress = Math.min(1, (now - start) / duration);
       const eased = 1 - Math.pow(1 - progress, 3);
       const value = target * eased;
-      el.textContent = value.toFixed(decimals) + suffix;
+      el.textContent = fmt(value) + suffix;
       if (progress < 1) requestAnimationFrame(tick);
-      else el.textContent = target.toFixed(decimals) + suffix;
+      else el.textContent = fmt(target) + suffix;
     }
     if (reduceMotion) {
-      el.textContent = target.toFixed(decimals) + suffix;
+      el.textContent = fmt(target) + suffix;
     } else {
       requestAnimationFrame(tick);
     }
@@ -253,19 +269,21 @@ document.addEventListener('DOMContentLoaded', () => {
      Recomputes "years of experience" from a fixed career-start date
      so the badge and stat stay accurate without manual edits. */
   const CAREER_START = new Date('2023-02-01'); // first professional role (Orotron internship)
+  // Rounded down to the nearest half year, e.g. 3.5
   function yearsSince(date){
     const now = new Date();
-    let years = now.getFullYear() - date.getFullYear();
-    const hasHadAnniversaryThisYear =
-      now.getMonth() > date.getMonth() ||
-      (now.getMonth() === date.getMonth() && now.getDate() >= date.getDate());
-    if (!hasHadAnniversaryThisYear) years -= 1;
-    return Math.max(1, years);
+    const months = (now.getFullYear() - date.getFullYear()) * 12 + (now.getMonth() - date.getMonth())
+      - (now.getDate() < date.getDate() ? 1 : 0);
+    return Math.max(1, Math.floor(months / 6) / 2);
   }
   const exp = yearsSince(CAREER_START);
+  const expLabel = Number.isInteger(exp) ? String(exp) : exp.toFixed(1);
   const expChip = document.getElementById('expChip');
-  if (expChip) expChip.textContent = `${exp}+ yrs experience`;
+  if (expChip) expChip.textContent = `${expLabel}+ yrs experience`;
   const expStat = document.querySelector('.stat-num[data-count="3"]');
-  if (expStat) expStat.dataset.count = String(exp);
+  if (expStat) { expStat.dataset.count = String(exp); expStat.dataset.decimals = Number.isInteger(exp) ? '0' : '1'; }
+
+  // Open the tab named in the URL (e.g. …/portfolio/#resume) once everything is wired up.
+  if (location.hash.length > 1) goTo(location.hash.slice(1), false);
 
 });
