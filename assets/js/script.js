@@ -81,10 +81,32 @@ document.addEventListener('DOMContentLoaded', () => {
     navIndicator.style.transform = `translateX(${target.offsetLeft}px)`;
   }
 
+  // Mobile: show a fade when the tab bar overflows, and keep the active tab in view.
+  const navbarEl = document.querySelector('.navbar');
+  function updateNavOverflow(){
+    if (!navbarEl) return;
+    const scrollable = navbarEl.scrollWidth > navbarEl.clientWidth + 2;
+    navbarEl.classList.toggle('is-scrollable', scrollable);
+    navbarEl.classList.toggle('at-end', navbarEl.scrollLeft + navbarEl.clientWidth >= navbarEl.scrollWidth - 2);
+  }
+  if (navbarEl) {
+    navbarEl.addEventListener('scroll', updateNavOverflow, { passive: true });
+    window.addEventListener('resize', updateNavOverflow);
+    window.addEventListener('load', updateNavOverflow);
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(updateNavOverflow);
+    updateNavOverflow();
+  }
+
   function activatePage(pageName, sourceBtn){
     pages.forEach((p) => p.classList.toggle('active', p.dataset.page === pageName));
     navLinks.forEach((b) => b.classList.toggle('active', b.dataset.page === pageName));
-    if (sourceBtn) moveIndicator(sourceBtn);
+    if (sourceBtn) {
+      moveIndicator(sourceBtn);
+      if (navbarEl && navbarEl.scrollWidth > navbarEl.clientWidth) {
+        const left = sourceBtn.offsetLeft - (navbarEl.clientWidth - sourceBtn.offsetWidth) / 2;
+        navbarEl.scrollTo({ left: Math.max(0, left), behavior: reduceMotion ? 'auto' : 'smooth' });
+      }
+    }
     if (pageViewport) pageViewport.scrollTo({ top: 0, behavior: reduceMotion ? 'auto' : 'smooth' });
     window.scrollTo({ top: 0, behavior: reduceMotion ? 'auto' : 'smooth' });
     revealVisible();
