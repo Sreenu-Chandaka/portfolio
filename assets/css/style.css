@@ -550,6 +550,53 @@ body.has-cursor .cursor-dot, body.has-cursor .cursor-ring{ opacity: 1; }
   .case{ padding: 18px 16px 14px; }
 }
 
+/* ---------- Mobile polish ---------- */
+@media (max-width: 900px){
+  /* Comfortable tap targets (~40px) for small text links */
+  .case-link, .link-btn{ display: inline-flex; align-items: center; min-height: 40px; }
+  a.contact-link{ display: inline-flex; align-items: center; min-height: 36px; }
+  .social-link{ width: 40px; height: 40px; }
+  .filter-btn{ min-height: 38px; }
+
+  /* Hint that the tab bar scrolls when it doesn't fit */
+  .navbar.is-scrollable{
+    -webkit-mask-image: linear-gradient(90deg, #000 85%, transparent);
+            mask-image: linear-gradient(90deg, #000 85%, transparent);
+  }
+  .navbar.is-scrollable.at-end{ -webkit-mask-image: none; mask-image: none; }
+}
+
+@media (max-width: 520px){
+  .navbar{ padding: 10px 12px; gap: 0; justify-content: space-between; }
+  .navbar-link{ padding: 8px 9px; font-size: 13px; }
+  .nav-indicator{ top: 10px; height: 34px; }
+  .page-title br{ display: none; }
+  .page-head{ margin-bottom: 28px; }
+  .meta-chip, .contact-label, .contact-card-label, .case-badge, .tag-list li{ font-size: 11px; }
+  .theme-toggle{ width: 38px; height: 38px; bottom: 16px; }
+  .to-top{ width: 38px; height: 38px; bottom: 62px; }
+}
+
+@media (max-width: 350px){
+  .navbar{ padding: 10px 8px; }
+  .navbar-link{ padding: 8px 7px; font-size: 12.5px; }
+}
+.contacts-toggle{ min-height: 36px; }
+
+/* Phones held sideways: keep the profile header short so the tabs stay in view */
+@media (max-height: 500px) and (orientation: landscape) and (max-width: 900px){
+  .sidebar{ padding: 14px 22px; }
+  .sidebar-top{ grid-template-columns: auto auto auto 1fr; row-gap: 10px; }
+  .avatar-frame{ width: 64px; height: 64px; }
+  .avatar-box{ width: 48px; height: 48px; margin: 8px; }
+  .status-pill{ display: none; }
+  .identity{ grid-column: 2 / 4; }
+  .meta-row{ grid-column: 4 / -1; margin-top: 0; justify-content: flex-end; }
+  .sidebar-cta{ grid-column: 1 / 3; }
+  .social-list--top{ grid-column: 3 / 4; }
+  .contacts-toggle{ grid-column: 4 / -1; border-top: none; padding-top: 0; margin-top: 0; justify-content: flex-end; gap: 10px; }
+}
+
 /* ---------- Focus states (a11y) ---------- */
 a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible{
   outline: 2px solid var(--amber); outline-offset: 2px;
